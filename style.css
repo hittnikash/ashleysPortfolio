@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* Background-Image */
+.no-js { 
+    background: url(/Users/ashleyhittenmiller/Desktop/code/wrinkledTexture.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    background-color: #000;
+    }
+    
+/* Basic Text Styles */
+@font-face {
+    font-family: 'HackneyPersonalUseOnly';
+    src: url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.eot');
+    src: url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.eot?#iefix') format('embedded-opentype'),
+         url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.woff2') format('woff2'),
+         url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.woff') format('woff'),
+         url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.ttf') format('truetype'),
+         url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.svg#HackneyPersonalUseOnly') format('svg');
+    font-display: swap;
+}
+
+#menu
+	 {
+	font-family: HackneyPersonalUseOnly;
+    font-size: 36px;
+    text-decoration: none;
+    color:#fff;
+}
+
+/* Small Screen Media Queries */
+@media (max-width: 576px) {
+    .nav-header {
+        display: flex;
+
+    }
+}

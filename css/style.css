@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/* Background-Image */
+html { 
+    background: url(/Users/ashleyhittenmiller/Desktop/code/wrinkledTexture.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    background-color: #000;
+    }
+    
+/* Basic Text Styles */
+@font-face {
+    font-family: 'HackneyPersonalUseOnly';
+    src: url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.eot');
+    src: url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.eot?#iefix') format('embedded-opentype'),
+         url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.woff2') format('woff2'),
+         url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.woff') format('woff'),
+         url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.ttf') format('truetype'),
+         url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.svg#HackneyPersonalUseOnly') format('svg');
+    font-display: swap;
+}
+
+#menu {
+	font-family: HackneyPersonalUseOnly;
+    font-size: 36px;
+    text-decoration: none;
+    color:#000;
+}
+
+
+.nav-logo  {
+    max-width: 8%;
+    margin-top: 5%;
+    margin-left: 5%;  
+}
+
+/* Small Screen Media Queries */
+@media (max-width: 576px) {
+    .nav-header {
+        display: flex;
+        flex-flow: column wrap;
+        flex: 1 1 0;
+
+    }
+}
+
+footer {
+background: #171717;
+position: sticky;
+}
+
+
+
+/* Large Screen Media Queries */
+@media (min-width: 576px) {
+    
+   .nav-logo, 
+    #menu {
+        display: inline-flex;
+        flex-flow: row wrap;
+    }
+
+    #menu {
+        display: inline-flex;
+        float: right;
+        margin-top: 5%;
+        margin-right: 5%;
+    }
+  
+    }
+   
+

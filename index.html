@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -17,16 +17,15 @@
 <!-- Navigation & Logo -->
     <header class= "main-header">
              <div class="container">
-                <img class= "nav-logo" src="img/icons/logo.png" width= "120px" height= "50" alt="Ashley Needy's logo">
+                <img class= "nav-logo" src="img/icons/logo.png" alt="Ashley Needy's logo">
                     <nav class= "main-nav"> 
-                        <button class= "hamburger" id="hamburger"></button>
-                            <img class= "burgerIcon" src= "img/icons/blackHamburger.svg" width= "50px" height= "50"alt="hamburger">
-                        <ul class= "nav-ul">
-                            <li></li><a href="#">Home</a></li>
-                            <li><a href="#">Photography</a></li>
-                            <li><a href="#">Design</a></li>
-                            <li><a href="#">About</a></li>
-                        </ul>
+                        <button onclick = "toggle()" id= "hamburger" class= "hamburger" style= "background: url(img/icons/blackHamburger.svg)"></button>
+                            <ul class= "nav-ul" id= "nav-ul ">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
                     </nav>
             </div>
      </header>
@@ -36,7 +35,7 @@
     <footer></footer> 
 
     <!-- JS (Hamburger Menu)-->
-    <script src="app.js"></script>
+    <script src= "app.js"></script> 
     
   </body>
   </html>

@@ -20,7 +20,7 @@ html {
     font-display: swap;
 }
 
-.container {
+.container {    
     width: 1100px;
     max-width: 100%;
     padding: 20px;
@@ -32,12 +32,11 @@ html {
 .main-header .container {
     display: flex;
     justify-content: space-around;
-    align-items: safe;
     flex-wrap: wrap;
 }
 
 
-#menu {
+.nav-ul {
 	font-family: HackneyPersonalUseOnly;
     font-size: 34px;
     text-decoration: none;
@@ -45,50 +44,78 @@ html {
     display: flex;
     flex-direction: row; 
     margin-right: 30%;
-  
 }
 
 .main-nav {
-    margin-right: 25%;
+    margin-right: 20%;
 }
 
 li {
-    margin-left: 25%;
- }
-
-.nav-logo, img {
-    max-width: 100%;
-    height: auto;
-    margin-right: 30%;
-   
+    margin-left: 22%;
 }
 
+.nav-logo {
+    display: flex;
+    width: 120px;
+    height: 60px;
+    margin-right: 30%;
+}
 
+.burgerIcon {
+    display: none;
 
-
-    
-    
-    
-    
-
+}
 
 footer {
     background: #171717;
     position: sticky;
-        }
+}
 
 /* Small Screen Media Queries */
 @media (max-width: 576px) {
-   
 
+    .container {    
+        width: 500px;
+        max-width: 100%;
+        padding: 20px;
+        padding-top: 20px;
+        margin: 0 auto;
+        border: 10px;
+    }
     
+    .main-header .container {
+         justify-content: space-between;
+    } 
+    .nav-logo {
+        margin-left: 5%;
+        margin-top: 4%;
+        
+        margin-right: 0;
+    }
+
+  
+    .burgerIcon {
+        display: flex;
+        margin-left: 70%;
+        margin-top: 10%;
+    }
+   
+    ul li, .nav-ul {
+        display: none;
+    }
+
+		
+	
+	
+	
+		
+	
 
 
 /* Large Screen Media Queries */
 @media (min-width: 700px) {
    
-   
-  
+
 }
    
 

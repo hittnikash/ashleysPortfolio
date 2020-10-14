@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 /* Background-Image */
-html { 
-    background: url(/Users/ashleyhittenmiller/Desktop/code/wrinkledTexture.jpg) no-repeat center center fixed; 
+:root { 
+    background: url(/Users/ashleyhittenmiller/Desktop/code/img/photos/wrinkledTexture.jpg) no-repeat center center fixed; 
     background-size: cover;
-    background-color: #000;
+    background-color: #fff;
 }
 
     
@@ -19,121 +19,135 @@ html {
          url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.svg#HackneyPersonalUseOnly') format('svg');
     font-display: swap;
 }
-
-.container {    
-    width: 1100px;
-    max-width: 100%;
-    padding: 20px;
-    padding-top: 20px;
-    margin: 0 auto;
-    border: 10px;
-}
-
-.main-header .container {
+.container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
 }
 
-
-.nav-ul {
+.nava, .navb, .navc, 
+.navd, .nav-ul, .li  {
     display: flex;
-    font-family: HackneyPersonalUseOnly;
-    font-size: 34px;
-    text-decoration: none;
-    color:#000; 
-    display: flex;
-    flex-direction: row; 
-    margin-right: 30%;
-}
-
-.main-nav {
-    margin-right: 20%;
-    flex-wrap: wrap;
-}
-
-li {
-    margin-left: 28%;
+    flex-direction: row;
+    padding: 15px;
+    margin: 5px auto;
+    border-radius: 3px;
 }
 
 .nav-logo {
-    display: flex;
     width: 120px;
     height: 60px;
-    margin-right: 30%;
+    margin-top: 4%;
+    margin-right: auto;
 }
+
+.nav-ul {
+    font-family: HackneyPersonalUseOnly;
+    font-size: 34px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color:#000;
+}
+
+.nav-ul a:hover {
+    background-color: #000;
+    color: white;
+    -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  }
 
 .hamburger {
     display: none;
-    margin-left: 70%;
-    margin-top: 30%;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    border: 0;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    min-height: 100vh
+}
 
 footer {
-    background: #171717;
-    position: sticky;
+    background: #1717;
+   
+    width: 100%;
+    margin: 0 auto;
 }
-
 
 /* Small Screen Media Queries */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 
-    .container { 
-        display: block;   
-        width: 500px;
-        max-width: 100%;
-        padding: 20px;
-        padding-top: 20px;
-        margin: 0 auto;
-        border: 10px;
-    }
     
-    .main-header .container {
-         justify-content: space-between;
-    } 
-
     .hamburger {
         display: block;
-        margin-bottom: 60%;
+        margin-left: auto;
+        margin-right: 20%;
+        margin-top: 10%;
+        width: 60px;
+        height: 60px;
+        box-sizing: border-box;
+    }
+    .nava, .navb, .navc, 
+    .navd, .nav-ul {
+        display: block;
+        padding: 15px;
+        margin: 5px auto;
+        font-size: 40px; 
+        text-align: center;
     }
     
-    .nav-ul {
-        display: none;
-        font-size: 40px;
-    }
-    nav li, a {
-        display: block;
-        width: 100%;
-        padding-top: 10%;
-        padding-bottom: 10%;
-        
-        
-
-
-    }
-
     .nav-logo {
-        margin-left: 5%;
-        margin-top: 4%;
-        margin-right: 0;
+        width: 120px;
+        height: 60px;
+        margin-left: 3%;
+        margin-top: 5%;
+        margin-right: auto;
     }
+
+    .social-links  {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      
+    
+        
+    }
+
+    .content {
+        height: 200%;
+    }
+
+
 
 }	
-	
-	
-		
-	
 
+/* Medium Screen Media Queries */
+/*@media (min-width: 769px) {
+	.container { 
+        display: flex;   
+        width: 800px;
+        max-width: 100%;
+        padding: 10px;
+        padding-top: 10px;
+        margin: 0 auto;
+        border: 10px;
+    }        
+}
 
 /* Large Screen Media Queries */
-@media (min-width: 700px) {
-   
+/*@media (min-width: 1000 px) {
+ 
+    .nava, .navab, .navac, .navad, .nav-ul, li, .main-nav, .container   {
+        display: flex;
+        flex-direction: row;
+        }
+    }*/
 
-}
    
 

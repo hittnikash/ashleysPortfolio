@@ -9,77 +9,80 @@
         <meta name="description" content="portfolio"/>
         <meta name="author" content="Ashley Needy"/>
     <!--Link to CSS -->  
-     
-   <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<!-- Navigation & Logo -->
-    <header class= "main-header">
-             <div class="container">
-                <img class= "nav-logo" src="img/icons/personalLogo.png" alt="Ashley Needy's logo">
-                    <nav class= "main-nav"> 
-                        <!-- Hamburger Menu for Mobile Nav -->
-                        <button onclick = "toggle()" id= "hamburger" class= "hamburger" style= "background: url(img/icons/blackHamburger.svg)"></button>
-                            <ul class= "nav-ul" id= "nav-ul">
-                                <li class="nava"><a href="#">Home</a></li>
-                                <li class="navb"><a href="#">Gallery</a></li>
-                                <li class="navc"><a href="#">About</a></li>
-                                <li class="navd"><a href="#">Contact</a></li>
-                            </ul>
-                    </nav>
-            </div>
-     </header>
+
+<!-- Header -->
+    <header class= "container" role="banner">
+        <!-- Navigation Logo -->
+        <img class= "nav-logo" src="img/icons/personalLogo.png" alt="Ashley Needy's logo">
+            <nav class= "main-nav" role="navigation"> 
+                <!-- Hamburger Menu for Mobile Nav -->
+                <button onclick = "toggle()" id= "hamburger" class= "hamburger" style= "background: url(img/icons/blackHamburger.svg)"></button>
+                <!-- Navigation Links -->   
+                <ul class= "nav-ul" id= "nav-ul">
+                        <li class="nava"><a href="#">Home</a></li>
+                        <li class="navb"><a href="#">Gallery</a></li>
+                        <li class="navc"><a href="#">About</a></li>
+                        <li class="navd"><a href="#">Contact</a></li>
+                    </ul>
+            </nav>
+    </header>
+
 <!-- Content Section -->
-<main class="content">
+<main class="content" role= "main">
         <section>
+            <!-- Main Section: Gallery -->
             <div class= "image-grid">
               
-<!---landscape-->
+                <!---landscape Orientation-->
                     <img class="gallery-image" src="img/photos/loud1.png" width= "300" height= "200" alt="Music festival"/> 
                     <img class="gallery-image" src="img/photos/welder1.png" width= "300" height= "200" alt="Welder"/>  
-                    <img class="gallery-image" src="img/photos/colorTrain.png" width= "300" height= "200" alt=""/>   
-                    <img class="gallery-image" src="img/photos/bridge.png" width= "300" height= "200" alt=""/> 
-                    <img class="gallery-image" src="img/photos/singleSnail.png" width= "300" height= "200" alt=""/>  
-                    <img class="gallery-image" src="img/photos/butterfly.png" width= "300" height= "200" alt=""/>  
-                    <img class="gallery-image" src="img/photos/seqoyaSunset.png" width= "300" height= "200" alt=""/>
-                    <img class="gallery-image" src="img/photos/turtle.png" width= "300" height= "200" alt=""/>
-                    <img class="gallery-image" src="img/photos/shores.png" width= "300" height= "200" alt=""/>  
-                    <img class="gallery-image" src="img/photos/boardWalk.png" width= "300" height= "200" alt=""/> 
-                    <img class="gallery-image" src="img/photos/FuneralPadoga.png" width= "300" height= "200" alt=""/>
-                    <img class="gallery-image" src="img/photos/sandRock.png" width= "300" height= "200" alt=""/>   
-                    <img class="gallery-image" src="img/photos/OceansidePalms.png" width= "300" height= "200" alt=""/>
-                    <img class="gallery-image" src="img/photos/budd.png" width= "300" height= "200" alt=""/> 
-                    <img class="gallery-image" src="img/photos/snailCouple.png" width= "300" height= "200" alt=""/>  
-
-<!--portrait-->
-                
-                    <img class="gallery-image" src="img/photos/cafe1.png" width= "200" height= "300" alt="Motercycle"/>  
+                    <img class="gallery-image" src="img/photos/colorTrain.png" width= "300" height= "200" alt="Graffiti Train"/>   
+                    <img class="gallery-image" src="img/photos/bridge.png" width= "300" height= "200" alt="Old Train Bridge"/> 
+                    <img class="gallery-image" src="img/photos/singleSnail.png" width= "300" height= "200" alt=" Single Snail"/>  
+                    <img class="gallery-image" src="img/photos/butterfly.png" width= "300" height= "200" alt="Butterfly on flower"/>  
+                    <img class="gallery-image" src="img/photos/seqoyaSunset.png" width= "300" height= "200" alt="Mountain Sunset"/>
+                    <img class="gallery-image" src="img/photos/turtle.png" width= "300" height= "200" alt="Turtle"/>
+                    <img class="gallery-image" src="img/photos/shores.png" width= "300" height= "200" alt="Oceanside, Beach"/>  
+                    <img class="gallery-image" src="img/photos/boardWalk.png" width= "300" height= "200" alt="Oceanside, Boardwalk"/> 
+                    <img class="gallery-image" src="img/photos/FuneralPadoga.png" width= "300" height= "200" alt="Funeral Padoga"/>
+                    <img class="gallery-image" src="img/photos/sandRock.png" width= "300" height= "200" alt="Rocks on Beach"/>   
+                    <img class="gallery-image" src="img/photos/OceansidePalms.png" width= "300" height= "200" alt="Palmtrees in Oceanside"/>
+                    <img class="gallery-image" src="img/photos/budd.png" width= "300" height= "200" alt="Abstract Budweiser image"/> 
+                    <img class="gallery-image" src="img/photos/snailCouple.png" width= "300" height= "200" alt="Couple of Snails"/>  
+            </div>
+                <!--portrait Orientation-->
+            <div class= "image-grid"> 
+                    <img class="gallery-image" src="img/photos/cafe1.png" width= "200" height= "300" alt="Motorcycle"/>  
                     <img class="gallery-image" src="img/photos/chevy1.png" width= "200" height= "300" alt="Chevy Pickup"/> 
                     <img class="gallery-image" src="img/photos/waterTower1.png" width= "200" height= "300" alt="Watertower"/> 
-                    <img class="gallery-image" src="img/photos/motercyle.png" width= "200" height= "300" alt=""/> 
-                    <img class="gallery-image" src="img/photos/sanDiego.png" width= "200" height= "300" alt=""/>  
-                    <img class="gallery-image" src="img/photos/Buddha.png" width= "200" height= "300" alt=""/>    
-                    <img class="gallery-image" src="img/photos/natureWins.png" width= "200" height= "300" alt=""/> 
-                    <img class="gallery-image" src="img/photos/dafi.png" width= "200" height= "300" alt=""/>  
-                    <img class="gallery-image" src="img/photos/baby.png" width= "200" height= "300" alt=""/>  
-                    <img class="gallery-image" src="img/photos/padoga.png" width= "200" height= "300" alt=""/>   
-                    <img class="gallery-image" src="img/photos/palms.png" width= "200" height= "300" alt=""/>  
-                    
-                    <img class="gallery-image" src="img/photos/williamZombieWe.png" width= "300" height= "200" alt=""/> 
-                    <img class="gallery-image" src="img/photos/williamHunterHonda.png" width= "300" height= "200" alt=""/>  
-                    <img class="gallery-image" src="img/photos/william.png" width= "300" height= "200" alt=""/>  
-                    <img class="gallery-image" src="img/photos/hunterZombieWe.png" width= "200" height= "300" alt=""/>  
-
-
-
-
-
-             </div>
-            </section>
+                    <img class="gallery-image" src="img/photos/motercyle.png" width= "200" height= "300" alt="Motorcyle"/> 
+                    <img class="gallery-image" src="img/photos/sanDiego.png" width= "200" height= "300" alt="San Diego, California"/>  
+                    <img class="gallery-image" src="img/photos/Buddha.png" width= "200" height= "300" alt="Buddha Statue"/>    
+                    <img class="gallery-image" src="img/photos/natureWins.png" width= "200" height= "300" alt="Daffodils Growing on Sidewalk"/> 
+                    <img class="gallery-image" src="img/photos/dafi.png" width= "200" height= "300" alt="Daffodil Field"/> 
+                    <img class="gallery-image" src="img/photos/baby.png" width= "200" height= "300" alt="New parents and Baby"/>  
+                    <img class="gallery-image" src="img/photos/padoga.png" width= "200" height= "300" alt="Funeral Padoga"/>   
+                    <img class="gallery-image" src="img/photos/palms.png" width= "200" height= "300" alt="Palm trees"/>  
+            </div>      
+                
+            <div class="graphic-content">
+                <!-- Graphic Image links -->
+                     <div><a href="img/photos/williamZombieWe.png "><img class="gallery-image" src="img/photos/disclaimer.png" width= "300" height= "200" alt="Disclaimer Graphic Content: Zombie"></a></div>
+                     <div><a href="img/photos/williamHunterHonda.png"><img class="gallery-image" src="img/photos/disclaimer.png" width= "300" height= "200" alt="Disclaimer Graphic Content: Zombie"/></a></div> 
+                     <div><a href="img/photos/william.png"><img class="gallery-image" src="img/photos/disclaimer.png" width= "300" height= "200" alt="Disclaimer Graphic Content: Zombie"/></a></div>
+                     <div><a href="img/photos/hunterZombieWe.png "><img class="gallery-image" src="img/photos/disclaimer.png" width= "300" height= "200" alt="Disclaimer Graphic Content: Zombie"/></a></div>
+                </div>
+            </div>
+        </section>
 </main>
-    <footer>
+<!-- Footer -->
+    <footer role ="contentinfo">
         <div class= "container-icons">
+            <!-- Social Media Icons -->
             <ul class= "social-links">
               <li class="be"><a href="https://www.behance.net/ashleyneedy"><img src="img/icons/behanceIcon.svg" alt="Link to Behance"/></a></li>
               <li class="link"><a href="https://www.linkedin.com/in/ashley-needy/"><img src="img/icons/linkedinIcon.svg" alt="Link to Likedin"/></a></li>
@@ -89,11 +92,13 @@
         </div>
     </footer> 
     
-    <!-- JS (Hamburger Menu)-->
-    <script src= "js/app.js"></script> 
-    
-    <!-- JS (Modal Box)-->
-    <script src= "js/lightBox.js"></script> 
-    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "js/app.js"></script> 
+        
+        <!-- JS (Modal Box)-->
+        <script src= "js/lightBox.js"></script> 
+        
+        <!-- JS (Modal Box)-->
+        <script src= "js/disclaimerBack.js"></script> 
     </body>
 </html>

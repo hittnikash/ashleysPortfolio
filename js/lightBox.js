@@ -9,7 +9,7 @@ images.forEach(image => {
     image.addEventListener('click', e => {
         lightbox.classList.add('active')
         const img = document.createElement('img')
-        img.src = image.src
+        img.src = image.src 
         // To remove the xtra images from lightbox//
         while (lightbox.firstChild) {
             lightbox.removeChild(lightbox.firstChild)

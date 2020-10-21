@@ -3,7 +3,7 @@
 /* Background-Image */
 
 :root { 
-    background: url("/Users/ashleyhittenmiller/Desktop/code/img/photos/wrinkledTexture.jpg") no-repeat center center fixed;;
+    background: url("/Users/ashleyhittenmiller/Desktop/code/img/photos/wrinkledTexture.png") no-repeat center center fixed;
     background-size: cover;
     background-color: #fff;
 }
@@ -32,7 +32,7 @@
 }
 
 .nava, .navb, .navc, 
-.navd, .nav-ul, .li  {
+.navd, .nav-ul  {
     display: flex;
     flex-direction: row;
     padding: 15px;
@@ -43,15 +43,15 @@
 }
 
 .nav-logo {
-    width: 120px;
-    height: 60px;
-    margin-top: 2%;
+    width: auto;
+    height: 55px;
+    margin-top: 3%;
     margin-left: -7%;
 }
 
 .nav-ul {
     font-family: HackneyPersonalUseOnly, Impact, sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 3px;
     text-decoration: none;
     color:#000;
@@ -76,7 +76,7 @@ body{
 }
 
 /* FlexBox Image Grid */
-.image-grid, .graphic-content {
+.image-grid, .graphic-content  {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -85,19 +85,48 @@ body{
     cursor: pointer;
 }
 
-.gallery-image {
+#lightbox {
+    width: 500%;
+    height: auto;
+}
+
+.wrapper {
     display: block;
-    flex: .20 1 auto;
-    padding: 5px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.graphic-image {
+    display:flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    margin: 5px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     border-radius: 10px;
     filter: grayscale(100%); 
     opacity: 0.8;
-    max-width: 100%;
+    object-fit: cover;
+} 
+    
+.gallery-image {
+    display:flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    margin: 5px;
+    width: 100%;
+    max-width: 200px;
     height: auto;
-    align-self: center:
+    border-radius: 10px;
+    filter: grayscale(100%); 
+    opacity: 0.8;
+    object-fit: cover;
 }
 
-.gallery-image:hover {
+.gallery-image:hover,
+.graphic-image:hover {
     opacity: 1;
     box-shadow: 0 0 2px 1px rgba(29, 72, 73, 1);
     filter: none;
@@ -123,27 +152,31 @@ body{
 }
 
 #lightbox img {
-    max-width: 90%;
-    max-height: 80%;
+    max-width: 90%;  /* changes sixe of image in lightbox */
+    max-height: 90%;
     padding: 5px;
     background-color: #394a4a;;
     border: 10px solid #000; 
     border-radius: 15px;
 }
+
 /* lightbox End */
+
+/* social Media Icons */
+.social-links {
+    display: inline-flex;
+}
+
+#be, #link, #face, #insta {
+    margin-bottom: 10%;
+    cursor: pointer;
+    width: 70px;
+}
 
 /* Footer Begin */
 .content {
     flex: 1 1 auto;
     min-height: 100vh;
-}
-
-.be, .link, .face, .insta {
-    display: inline-flex;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 10%;
-    cursor: pointer;
 }
 
 footer {
@@ -155,9 +188,9 @@ footer {
 }
 /* Footer End */
 
-/* Small Screen Media Queries */
+/* Small Screen Media Queries (Mobile) */
 @media (max-width: 768px) {
-  
+  /* Mobile Navigation */
     .hamburger {
         display: block;
         margin-left: auto;
@@ -184,6 +217,16 @@ footer {
         margin-right: auto;
     }
 
+/* Images & Lightbox for Mobile */
+    .gallery-image, .graphic-image {
+       max-width: 95%;
+       margin-left: 3%;
+    }
+
+    #lightbox img {
+        max-width: 100%;  /* changes sixe of image in lightbox */
+        max-height: 100%;
+    }
 
     footer {
         display: flex;
@@ -192,23 +235,26 @@ footer {
         justify-content: center;
     }
 
-    .be, .link, .face, .insta {
-        margin-left: 4.5px;
-        margin-right: 4.5px;
+ /* Social Media Icons */
+    #be, #link, #face, #insta {
         margin-bottom: 10%;
+        cursor: pointer;
+        width: 60px;
     }
 
-    .content {
-        height: 100%;
-    } 
-}	
+        .content {
+            height: 100%;
+        } 
+    }	
 
 /* Medium Screen Media Queries */
+@media (max-width: 1024px) {
 
 
 
+    }
 /* Large Screen Media Queries */
-/*@media (min-width: 1000 px) {
+   @media (min-width: 1000px) {
  
 
 

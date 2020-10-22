@@ -21,32 +21,7 @@
     font-display: swap;
 }
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
-    margin-left: 30px;
-    margin-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 15%;
-}
-
-.nava, .navb, .navc, 
-.navd, .nav-ul  {
-    display: flex;
-    flex-direction: row;
-    padding: 15px;
-    margin: auto;
-    margin-left: 4%;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.nav-logo {
-    width: auto;
-    height: 55px;
-    margin-top: 3%;
-    margin-left: -7%;
+    padding: 5%;
 }
 
 .nav-ul {
@@ -60,19 +35,20 @@
 .nav-ul a:hover {
     background-color: #394a4a;
     color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 150px;
     -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
     -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
     -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
     transition: background-color 0.6s ease-out, color 0.6s ease-out;
   }
 
-.hamburger {
-    display: none;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
+.nav-logo {
+    width: auto;
+    height: 60px;
+    margin-right: auto;
+    
 }
 
 /* FlexBox Image Grid */
@@ -96,7 +72,9 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-
+  
+.gallery-image, 
+.project-image,
 .graphic-image {
     display:flex;
     flex-wrap: wrap;
@@ -109,22 +87,9 @@ body{
     filter: grayscale(100%); 
     opacity: 0.8;
     object-fit: cover;
-} 
-    
-.gallery-image {
-    display:flex;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    margin: 5px;
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-    filter: grayscale(100%); 
-    opacity: 0.8;
-    object-fit: cover;
 }
 
+.project-image:hover,
 .gallery-image:hover,
 .graphic-image:hover {
     opacity: 1;
@@ -133,8 +98,7 @@ body{
 }
 /* End FlexBox Image Grid */
 
-/* lightbox */
-
+/* Lightbox */
 #lightbox {
     position: fixed;
     z-index: 1000;
@@ -159,24 +123,20 @@ body{
     border: 10px solid #000; 
     border-radius: 15px;
 }
-
 /* lightbox End */
 
+ 
 /* social Media Icons */
 .social-links {
     display: inline-flex;
 }
 
-#be, #link, #face, #insta {
+#be, #link, #face, #insta  {
+    margin-top: 10%;
     margin-bottom: 10%;
     cursor: pointer;
     width: 70px;
-}
-
-/* Footer Begin */
-.content {
-    flex: 1 1 auto;
-    min-height: 100vh;
+    padding: 5%;
 }
 
 footer {
@@ -186,77 +146,158 @@ footer {
     margin: 0 auto;
     margin-top: 10%;
 }
-/* Footer End */
 
-/* Small Screen Media Queries (Mobile) */
-@media (max-width: 768px) {
-  /* Mobile Navigation */
-    .hamburger {
-        display: block;
-        margin-left: auto;
-        margin-right: 10%;
-        margin-top: 6%;
-        width: 60px;
-        height: 60px;
-    }
+/* About Page */
+h1, p {
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5%;
+    margin-left: 5%;
+}
 
-    .nava, .navb, .navc, 
-    .navd, .nav-ul {
-        display: block;
-        padding: 15px;
-        margin: 5px auto;
-        font-size: 40px; 
-        text-align: center;
-    }
-    
-    .nav-logo {
-        width: 120px;
-        height: 60px;
-        margin-left: -4%;
-        margin-top: 2%;
-        margin-right: auto;
-    }
+
+/******* Small Screen Media Queries (Mobile) ******/
+@media (max-width: 414px)   {
+/* Mobile Navigation */
+.hamburger  {
+    display: block;
+    margin-left: 70vw;
+    margin-right: 15vw;
+    margin-top: -19%;
+    margin-bottom: 15vh;
+    width: 60px;
+    height: 60px;
+}
+
+.nava, .navb, .navc, 
+.navd, .nav-ul {
+    display: block;
+    padding: 15px;
+    margin: 5px auto;
+    font-size: 40px; 
+    text-align: center;
+}
+
+.container {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-top: 6%;
+}
 
 /* Images & Lightbox for Mobile */
-    .gallery-image, .graphic-image {
-       max-width: 95%;
-       margin-left: 3%;
-    }
+.gallery-image, 
+.graphic-image,
+.project-image {
+    max-width: 95%;
+    margin-left: 3%;
+}
 
-    #lightbox img {
-        max-width: 100%;  /* changes sixe of image in lightbox */
-        max-height: 100%;
-    }
+#lightbox img {
+    max-width: 100%;  /* changes size of image in lightbox */
+    max-height: 100%;
+}
 
-    footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
- /* Social Media Icons */
-    #be, #link, #face, #insta {
-        margin-bottom: 10%;
-        cursor: pointer;
-        width: 60px;
-    }
+/* Social Media Icons */
+#be, #link, #face, #insta {
+    margin-bottom: 10%;
+    cursor: pointer;
+    width: 60px;
+}
 
-        .content {
-            height: 100%;
-        } 
-    }	
-
-/* Medium Screen Media Queries */
-@media (max-width: 1024px) {
-
+    .content {
+        height: 100%;
+    } 
+}	
 
 
-    }
-/* Large Screen Media Queries */
-   @media (min-width: 1000px) {
- 
+/****** Medium Screen Media Queries (tablets) ******/
+@media (min-width: 415px) {
+.container {
+    padding: 5%;
+} 
+
+.hamburger {
+    display: block;
+    margin-left: 70vw;
+    margin-right: 15vw;
+    margin-top: -10%;
+    margin-bottom: 15vh;
+    width: 60px;
+    height: 60px;
+}
+
+.nava, .navb, .navc, 
+.navd, .nav-ul {
+    display: block;
+    padding: 15px;
+    margin: 5px auto;
+    font-size: 40px; 
+    text-align: center;
+}
+
+.nav-logo {
+    margin-left: 2%;
+    
+}
 
 
-   
+
+/****** Large-ish Screen Media Queries (laptops and ^) *******/
+@media (min-width: 1020px) {
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 2%;
+    padding: 8%;
+}
+
+.nav-logo {
+    margin-top: 5px;
+    
+}
+
+.nava, .navb, .navc, 
+.navd, .nav-ul  {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin: auto;
+    margin-top: -2%;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer Begin */
+.content {
+    flex: 1 1 auto;
+    min-height: 100vh;
+}
+
+
+/* Footer End */
+}
+
+
+
+
+
 

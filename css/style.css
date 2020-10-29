@@ -3,29 +3,52 @@
 /* Background-Image */
 
 :root { 
-    background: url("/Users/ashleyhittenmiller/Desktop/code/img/photos/wrinkledTexture.png") no-repeat center center fixed;
+    background: url(../img/photos/crumpledPaperTexture.jpg) no-repeat center center;
     background-size: cover;
     background-color: #fff;
+    height: auto;
+    flex: 1 1 auto;
 }
+   
 
     
 /* Basic Text Styles */
 @font-face {
     font-family: 'HackneyPersonalUseOnly';
-    src: url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.eot');
-    src: url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.eot?#iefix') format('embedded-opentype'),
-         url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.woff2') format('woff2'),
-         url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.woff') format('woff'),
-         url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.ttf') format('truetype'),
-         url('/Users/ashleyhittenmiller/Desktop/ProjectCode/fontHackneyPersonalUseOnly.svg#HackneyPersonalUseOnly') format('svg');
-    font-display: swap;
+    src: url('font/HackneyPersonalUseOnly.eot');
+    src: url('font/HackneyPersonalUseOnly.eot?#iefix') format('embedded-opentype'),
+         url('font/HackneyPersonalUseOnly.woff2') format('woff2'),
+         url('font/HackneyPersonalUseOnly.woff') format('woff'),
+         url('font/HackneyPersonalUseOnly.ttf') format('truetype'),
+         url('font/HackneyPersonalUseOnly.svg#HackneyPersonalUseOnly') format('svg');
+    font-display: fallback;
+    font-style: normal;
+    font-weight: normal;
 }
+
+/* Body Font */
+h1, h2, p {
+    font-family: "Montserrat subheading", "Verdana", sans-serif;
+    font-size: 1rem;
+    line-height: 25px;
+    max-width: 450px;
+    padding: 10%;
+}
+
+h1, h2{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
 .container {
     padding: 5%;
+   
 }
 
 .nav-ul {
-    font-family: HackneyPersonalUseOnly, Impact, sans-serif;
+    font-family: "HackneyPersonalUseOnly", Impact, sans-serif;
     font-size: 2.5rem;
     letter-spacing: 3px;
     text-decoration: none;
@@ -37,7 +60,7 @@
     color: white;
     text-align: center;
     border-radius: 5px;
-    width: 150px;
+    width: 180px;
     -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
     -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
     -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
@@ -48,7 +71,6 @@
     width: auto;
     height: 60px;
     margin-right: auto;
-    
 }
 
 /* FlexBox Image Grid */
@@ -66,27 +88,32 @@
     height: auto;
 }
 
-.wrapper {
-    display: block;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-  
 .gallery-image, 
 .project-image,
 .graphic-image {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     flex: 1 1 auto;
     margin: 5px;
     width: 100%;
-    max-width: 200px;
-    height: auto;
+    max-width: 250px;
+    height: 200px;
     border-radius: 10px;
     filter: grayscale(100%); 
     opacity: 0.8;
     object-fit: cover;
+}
+
+.self-portrait-yuk {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 10%;
 }
 
 .project-image:hover,
@@ -95,6 +122,7 @@
     opacity: 1;
     box-shadow: 0 0 2px 1px rgba(29, 72, 73, 1);
     filter: none;
+    transform: scale(1.01);
 }
 /* End FlexBox Image Grid */
 
@@ -113,6 +141,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 #lightbox img {
@@ -124,6 +153,81 @@
     border-radius: 15px;
 }
 /* lightbox End */
+
+ .left, .right  {
+    display: inline-flex;
+    width: 45px;
+    height: 45px;
+ }
+
+/* Contact/Feedback Form */
+.wrap {
+    margin-top: -5%;
+    margin-bottom: -5%;
+}
+
+hr {
+    max-width: 250px;
+}
+
+form {
+    max-width: 300px;
+    min-width: 200px;
+    border-radius:  10px;
+    padding: 10px 20px;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea, select {
+   margin: 5%;
+   padding: 15px;
+   width: 100%;
+   height: auto;
+   border-radius: 5px;
+   border: 1px solid #000;
+   text-transform: uppercase;
+}
+
+legend {
+    margin-bottom: 0px;
+    font-weight: lighter;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.number {
+    background-color:#394a4a;
+    color: #fff;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    font-size: 0.8rem;
+    margin-right: 4px;
+}
+
+.btn {
+    padding: 19px 39px 18px 39px;
+    color: #fff;
+    background-color: #394a4a;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: 10px;
+    border: 1px 1px 2px;
+    border-width: 1px 1px 2px;
+}
+/**** Form End ****/
 
  
 /* social Media Icons */
@@ -147,20 +251,17 @@ footer {
     margin-top: 10%;
 }
 
-/* About Page */
-h1, p {
-    font-family:  Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 5%;
-    margin-left: 5%;
-}
 
 
-/******* Small Screen Media Queries (Mobile) ******/
+
+/******* Small Screen Media Queries: targets VP sizes 414px and smaller ******/
 @media (max-width: 414px)   {
 /* Mobile Navigation */
+
+:root {
+  image-orientation: portrait ; 
+}
+
 .hamburger  {
     display: block;
     margin-left: 70vw;
@@ -186,6 +287,19 @@ h1, p {
     padding-top: 6%;
 }
 
+.left   {
+  margin-right: 0;
+  margin-left: 40%;
+  margin-top: 10%;
+ 
+}
+
+.right  {
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
 /* Images & Lightbox for Mobile */
 .gallery-image, 
 .graphic-image,
@@ -197,6 +311,23 @@ h1, p {
 #lightbox img {
     max-width: 100%;  /* changes size of image in lightbox */
     max-height: 100%;
+}
+
+.wrap {
+ max-width: 85%;
+ padding-bottom: 10%;
+}
+
+hr {
+    margin-bottom: 10%;
+}
+
+form {
+
+    max-width: 300px;
+    min-width: 250px;
+    margin-right: 5%;
+ 
 }
 
 footer {
@@ -213,13 +344,13 @@ footer {
     width: 60px;
 }
 
-    .content {
-        height: 100%;
-    } 
+.content {
+    height: 100%;
+} 
 }	
 
 
-/****** Medium Screen Media Queries (tablets) ******/
+/****** Medium Screen Media Queries: Targets VP sizes 415px & wider. ******/
 @media (min-width: 415px) {
 .container {
     padding: 5%;
@@ -246,12 +377,28 @@ footer {
 
 .nav-logo {
     margin-left: 2%;
-    
+    }
+
+    hr {
+        margin-bottom: 10%;
+        width: 200px;
+    }
+
+    form {
+        max-width: 300px;
+        min-width: 250px;
+        margin-left: 5%;
+        margin-right: 5%;
+     }
+
+     /* Footer Begin */
+    .content {
+        flex: 1 1 auto;
+        min-height: 100vh;
+}
 }
 
-
-
-/****** Large-ish Screen Media Queries (laptops and ^) *******/
+/****** Large-ish Screen Media Queries: Targets VP sizes 1020px & wider. *******/
 @media (min-width: 1020px) {
 .container {
     display: flex;
@@ -264,7 +411,14 @@ footer {
 
 .nav-logo {
     margin-top: 5px;
-    
+}
+
+h1 {
+    margin-left: 10%
+}
+
+h2, p {
+    margin-left: -5%;
 }
 
 .nava, .navb, .navc, 
@@ -281,20 +435,46 @@ footer {
     display: none;
 }
 
-body{
+.left   {
+    margin-right: 10px;
+    margin-left: 45%;
+    margin-top: 2%;
+}
+  
+  .right  {
+      margin-left: 10px;
+      margin-right: auto;
+      margin-top: 2%;
+  }
+
+body {
     display: flex;
     flex-direction: column;
 }
 
-/* Footer Begin */
 .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     flex: 1 1 auto;
     min-height: 100vh;
 }
-
-
-/* Footer End */
 }
+
+hr {
+    display: none;
+}
+
+form {
+    margin-top: -30%;
+}
+
+/* Footer Begin */
+
+}
+
+
 
 
 

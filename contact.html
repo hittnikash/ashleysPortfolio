@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8" />
         <!-- Title-->
-        <title>Ashley's_Portfolio | Gallery</title>
+        <title>Ashley's_Portfolio | Contact</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="description" content="portfolio"/>
         <meta name="author" content="Ashley Needy"/>
     <!--Link to CSS -->  
     <link rel="stylesheet" href="css/normalize.css">
-   <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
@@ -23,16 +23,49 @@
                 <button onclick = "toggle()" id= "hamburger" class= "hamburger" style= "background: url(img/icons/blackHamburger.svg)"></button>
                 <!-- Navigation Links -->   
                 <ul class= "nav-ul" id= "nav-ul">
-                        <li class="nava"><a href="index.html">Gallery</a></li>
-                        <li class="navb"><a href="projects.html">Projects</a></li>
-                        <li class="navc"><a href="about.html">About</a></li>
-                        <li class="navd"><a href="contact.html">Contact</a></li>
+                    <li class="navc"><a href="index.html">Home</a></li>
+                    <li class="nava"><a href="gallery.html">Gallery</a></li>
+                    <li class="navb"><a href="projects.html">Projects</a></li>
+                    <li class="navd"><a href="contact.html">Contact</a></li>
                     </ul>
             </nav>
     </header>
 
+    <!-- About Section -->
+<div class="wrap"><img class="self-portrait-yuk" src="img/photos/yuk.jpg" width="1000px" height="930px" alt="Portrait of Ashley Needy"/></div>
+<main class="content" role= "main">
+        <section>
+ <article class="bla">          
+<h2>Hello, my name is </br>
+    Ashley Needy.</h2>
+<p>I enjoy creating and figuring out solutions for 
+    design problems. I dont enjoy writting about myself- 
+    so I will keep this short. I am passionate about visual 
+    communication because it has an impact on our daily life 
+    and provides an opportunity to make a meaningful statement 
+    to someone else. This is one of my favorite 'creative' quotes:
+   "Creativity is nothing but the way to solve new problems."</p>
+   <hr>
+ </article>
+</section>
 
-        
+
+<!--Contact Form-->
+<form action="index.html" method="post">
+<h1>Contact Me!</h1>
+<fieldset>
+
+    <legend><span class="number">1</span>Your Basic Info</legend>
+    <input type="text" placeholder="name:" id="name" name="your_name">
+    <input type="email" placeholder="email:" id="mail" name="your_email">
+</fieldset>
+
+<fieldset>
+    <legend><span class="number">2</span>Message</legend>
+    <textarea id="feedback" placeholder="Your Thoughts..." name="user_feedback"></textarea>
+    <button class="btn" type="submit">Thanks for your feedback!</button>
+</fieldset>
+</form>
 </main>
 <!-- Footer -->
     <footer role="contentinfo">

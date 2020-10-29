@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Title-->
+        <title>Ashley's_Portfolio | Gallery</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="portfolio"/>
+        <meta name="author" content="Ashley Needy"/>
+    <!--Link to CSS -->  
+    <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- Header -->
+    <header class= "container" role="banner">
+        <!-- Navigation Logo -->
+        <img class= "nav-logo" src="img/icons/personalLogo.png" alt="Ashley Needy's logo">
+            <nav role="navigation"> 
+                <!-- Hamburger Menu for Mobile Nav -->
+                <button onclick = "toggle()" id= "hamburger" class= "hamburger" style= "background: url(img/icons/blackHamburger.svg)"></button>
+                <!-- Navigation Links -->   
+                <ul class= "nav-ul" id= "nav-ul">
+                        <li class="navc"><a href="index.html">Home</a></li>
+                        <li class="nava"><a href="gallery.html">Gallery</a></li>
+                        <li class="navb"><a href="projects.html">Projects</a></li>
+                        <li class="navd"><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav>
+    </header>
+
+<!-- Content Section -->
+<main class="content" role= "main">
+        <section id="gallery">
+            <h1>Welcome to my Gallery</h1>
+    <!-- Main Section: Gallery -->
+    <div class= "image-grid">
+        
+        <!---landscape Orientation-->
+                
+        <div class="wrapper"><img class="gallery-image" src="img/photos/loud1.jpg" width="2000px" height="1500px" alt="Music festival"/></div> 
+        <div class="wrapper"><img class="gallery-image" src="img/photos/BSAgauge.jpg" width="2000px" height="1757px" alt="Gauge"/></div> 
+        <div class="wrapper"><img class="gallery-image" src="img/photos/war.jpg" width="2000px" height="1757px" alt="Drift Car on Jackstands"/></div> 
+        <div class="wrapper"><img class="gallery-image" src="img/photos/welder1.jpg" width="2000px" height="1334px" alt="Welder"/></div>   
+        <div class="wrapper"><img class="gallery-image" src="img/photos/colorTrain.jpg" width="2000px" height="1332" alt="Graffiti Train"/></div>    
+        <div class="wrapper"><img class="gallery-image" src="img/photos/tech.jpg" width="2000px" height="1670px" alt="Drift Car"/></div>  
+        <div class="wrapper"><img class="gallery-image" src="img/photos/bridge.jpg" width="1000px" height="px" alt="Old Train Bridge"/></div>  
+        <div class="wrapper"><img class="gallery-image" src="img/photos/singleSnail.jpg" width="2000px" height="1500px" alt=" Single Snail"/></div>  
+        <div class="wrapper"><img class="gallery-image" src="img/photos/butterfly.jpg" width="2000px" height="1160px" alt="Butterfly on flower"/></div>   
+        <div class="wrapper"><img class="gallery-image" src="img/photos/beautiful.jpg" width="2000px" height="2000px" alt="Drift Car"/></div> 
+        <div class="wrapper"><img class="gallery-image" src="img/photos/seqoyaSunset.jpg" width="2000px" height="1500px" alt="Mountain Sunset"/></div> 
+        <div class="wrapper"><img class="gallery-image" src="img/photos/turtle.jpg" width="2000px" height="1088px" alt="Turtle"/></div> 
+        <div class="wrapper"><img class="gallery-image" src="img/photos/shores.jpg" width="2000px" height="1500px" alt="Oceanside, Beach"/></div>   
+        <div class="wrapper"><img class="gallery-image" src="img/photos/boardWalk.jpg" width="2000px" height="1500px" alt="Oceanside, Boardwalk"/></div>  
+        <div class="wrapper"><img class="gallery-image" src="img/photos/FuneralPadoga.jpg" width="2000px" height="1500px" alt="Funeral Padoga"/></div> 
+        <div class="wrapper"><img class="gallery-image" src="img/photos/hankook.jpg" width="2000px" height="1582px" alt="Drift Car"/></div>    
+    </div>
+</section>
+        <!-- L, R Arrows-->
+             <a href="gallery.html" class= "left"  style= "background: url(img/icons/lArrow.svg) no-repeat "></a>
+             <a href="galleryNext.html"  class= "right" style= "background: url(img/icons/rArrow.svg) no-repeat"></a>
+</main>
+
+<!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container-icons">
+            <!-- Social Media Icons -->
+            <ul class= "social-links">
+              <li class="icons" id="be"><a href="https://www.behance.net/ashleyneedy"><img src="img/icons/behanceIcon-sm.gif" width="50px" height="50px" alt="Link to Behance"/></a></li>
+              <li class="icons" id="link"><a href="https://www.linkedin.com/in/ashley-needy/"><img src="img/icons/linkedinIcon-small.gif" width="50px" height="50px" alt="Link to Likedin"/></a></li>
+              <li class="icons" id="face"><a href="https://www.facebook.com/ashleynneedy"><img src="img/icons/facebookIcon-small.gif" width="50px" height="50px" alt="Link to Facebook"/></a></li>
+              <li class="icons" id="insta"><a href="https://www.instagram.com/hittnikash/?hl=en"><img src="img/icons/instagramIcon-small.gif" width="50px" height="50px" alt="Link to Instagram"/></a></li>
+            </ul> 
+        </div>
+    </footer> 
+    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "js/app.js"></script> 
+        
+        <!-- JS (Modal Box)-->
+        <script src= "js/lightBox.js"></script> 
+        
+
+    </body>
+</html>

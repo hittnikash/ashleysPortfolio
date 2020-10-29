@@ -1,7 +1,7 @@
 /* Hamburger Menu */
 
-function toggle () {
-    let menu = document.getElementById("nav-ul");
+function toggle() {
+    const menu = document.getElementById("nav-ul");
         if (menu.style.display === "block") {
             menu.style.display = "none";     
         }
@@ -10,7 +10,7 @@ function toggle () {
         }
 }
 
-document.getElementById("hamburger").addEventListener("click", "toggle");
+
 
 
 

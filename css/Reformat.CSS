@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*--------------------------------------------
-                 MAIN STYLES
+           BASE STYLES (MOBILE-FIRST)
 --------------------------------------------*/    
 /* Background-Image & Container (heading padding) */
 :root { 
@@ -8,10 +8,27 @@
     width: 100%;
     }
 
-.container {
-   padding: 35px;
+/***** Mobile Navigation *****/
+.hamburger  {
+    display: block;
+    width: 60px;
+    height: 60px;
+   }
+
+.nava, .navb .navc, 
+.navd, .nav-ul  {
+    display: block;
+    padding: 15px;
+    font-size: 40px; 
+    text-align: center;
     }
-    
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    }
+
 /***** Basic Text Styles ******/
 @font-face {
     font-family: "HackneyPersonalUseOnly";
@@ -26,8 +43,7 @@
     font-weight: normal;
     }
 
-
-/***** Body Font *****/
+    /***** Body Font *****/
 h1, h2, p {
     font-family: "Montserrat subheading", "Verdana", sans-serif;
     font-size: 1rem;
@@ -40,6 +56,12 @@ h1, h2{
     font-weight: lighter;
     letter-spacing: 3px;
     }
+
+h1 {
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 20%;
+}
 
 .nav-ul {
     font-family: "HackneyPersonalUseOnly", "Impact", sans-serif;
@@ -65,7 +87,7 @@ h1, h2{
     height: 60px;
     }
 
-/***** FlexBox Image Grid *****/
+    /***** FlexBox Image Grid *****/
 .image-grid, .graphic-content  {
     display: flex;
     flex-wrap: wrap;
@@ -86,15 +108,8 @@ h1, h2{
     filter: grayscale(100%); 
     opacity: 0.8;
     object-fit: cover;
-    }
-
-.self-portrait-yuk {
-    flex: 1 1 auto;
-    width: 100%;
-    max-width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    object-fit: cover;
+    max-width: 100%;
+    width: 97%;
     }
 
 .project-image:hover,
@@ -119,7 +134,6 @@ h1, h2{
     display: none;
 }
     
-
 #lightbox.active {
     display: flex;
     justify-content: center;
@@ -132,6 +146,8 @@ h1, h2{
     padding: 5px;
     background-color: #171717;
     border-radius: 15px;
+    transform: scale(.90);
+    width: 100%;
 }
 /***** lightbox End *****/
 
@@ -155,27 +171,63 @@ h1, h2{
     margin-top: 10%;
     }
 
-/* Contact/Feedback Form */
+/***** CONTACT SECTION ******/
+.contactSec, .contentForm, .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+    }
+
+.self-portrait-yuk { 
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 20% 5% 10% 5%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    }
+.lineBreak {
+    display: block;
+}    
+
+p {
+   margin-top: 10px;
+   margin-left: 10%;
+   margin-right: 10%;
+   max-width: 600px;
+   }
+ 
 hr {
     display: block;
-    max-width: 250px;
+    margin-top: 15%;
+    margin-bottom: 20%;
+    max-width: 300px;
     }
-    
-.contactForm {
-    display: flex;
-    flex: 1 1 auto; 
+
+.h2con {
+    font-size: 1.3rem;
+    padding-bottom: 15%;
+    text-align: center;
     }
 
 .form {
     min-width: 200px;
+    max-width: 600px;
     border-radius:  10px;
     padding: 10px 20px;
-    }
+   }
 
 input[type="text"],
 input[type="email"],
 textarea, select {
-   margin: 10%;
+   margin-top: 10%;
+   margin-bottom: 10%;
    padding: 15px;
    width: 100%;
    height: auto;
@@ -183,6 +235,10 @@ textarea, select {
    border: 1px solid #000;
    text-transform: uppercase;
    }
+
+textarea {
+    min-height: 120px;;
+    }   
 
 legend {
     margin-bottom: 0px;
@@ -210,14 +266,13 @@ fieldset {
     }
 
 .btn {
-    padding: 19px 39px 18px 39px;
+    padding: 19px 39px 19px 39px;
     color: #fff;
     background-color: #394a4a;
     font-size: 18px;
     text-align: center;
     border-radius: 5px;
     width: 100%;
-    margin-left: 25px;
     border: 1px 1px 2px;
     border-width: 1px 1px 2px;
     text-transform: uppercase;
@@ -231,12 +286,14 @@ fieldset {
 .social-links {
     display: flex;
     flex-direction: row;
+    flex: 1 1 auto;
     justify-content: center;
     }
 
 .icons {
-    padding: 5px;
+    padding: 8px;
     margin-bottom: 15%;
+  
     }
 
 footer {
@@ -247,231 +304,114 @@ footer {
     margin-top: 10%;
     }
 /*-----------------------------------------------
-              END BASIC STYLES
+          END BASE STYLES (MOBILE FIRST)
 -----------------------------------------------*/
 
 
 /*-----------------------------------------------
-             MOBILE/ SM TABLET BEGIN
------------------------------------------------*/
-/******* Smallish Screen Media Queries: targets VP sizes 700px and smaller ******/
-@media (max-width: 700px)   {
-:root { 
-    background: url("../img/photos/crumpledPaperTexture.jpg") repeat top center;
-    width: 100%;
-    }
-/***** Mobile Navigation *****/
-.hamburger  {
-    display: block;
-    width: 60px;
-    height: 60px;
-   }
-
-.nava, .navb .navc, 
-.navd, .nav-ul  {
-    display: block;
-    padding: 15px;
-    font-size: 40px; 
-    text-align: center;
-    }
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    }
-
-/***** Contact Section *****/
-.self-portrait-yuk {
-    max-width: 300px;
-    margin-bottom: 10%;
-    margin-top: 20%;
-    } 
-
-h2 {
-    text-align: center;
-    margin-bottom: 5px;
-    }
-
-p {
-   padding-left: 5%;
-   padding-right: 5%;
-   max-width: 300px;
-}    
-
-.h2con {
-    padding-bottom: 10%;
-}
-
-
-.contactForm {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 5%;
-}
-
-.form  {
-    max-width: 280px;
-    min-width: 250px;
-}
-
-hr {
-    margin-top: 20%;
-    margin-bottom: 20%;
-    }
-/***** Contact End *****/
-
-
-/***** Images & Lightbox for Mobile *****/
-h1 {
-    text-align: center;
-    padding-bottom: 5%;
-    padding-top: 10%;
-    }
-
-.image-grid, 
-.graphic-content {
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.gallery-image, 
-.graphic-image,
-.project-image {
-    max-width: 100%;
-    height: 250px;
-    width: 97%;
-    }
-
-#lightbox img {
-    max-width: 100;  
-    max-height: 100%;
-    transform: scale(.90);
-    width: 100%;
- 
-   }
-}	
-/*-------------------------------------------------------------
-                    MOBILE END 
--------------------------------------------------------------*/
-
-/*-------------------------------------------------------------
                    TABLET BEGIN
--------------------------------------------------------------*/
-
-/****** Small-ish Screen Media Queries: Targets VP sizes 541px & wider. ******/
-@media (min-width: 540px) {
-/***** Mobile Navigation *****/
-.hamburger  {
-    display: block;
-    width: 60px;
-    height: 60px;
-   }
-
-.nava, .navb .navc, 
-.navd, .nav-ul  {
-    display: block;
-    padding: 15px;
-    font-size: 40px; 
-    text-align: center;
-    }
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    }
-
+------------------------------------------------*/
+/****** Large-ish Screen Media Queries: Targets VP sizes 768px & wider. *******/
+@media (min-width: 541px) {
+/****** IMAGES/ GALLERY/ PROJECTS *****/
 .image-grid, .graphic-content  {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
+    }
     
-}
-
 .gallery-image, 
 .project-image,
 .graphic-image {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 300px;
-    height: 200px;
-    max-width: 400px;
-}
-
-#lightbox img {
-    max-width: 100;  
-    max-height: 100%;
-    transform: scale(.90);
-    width: 100%;
-    object-fit: contain;
-   }
-
-   /***** Contact Section *****/
-.self-portrait-yuk {
-    max-width: 300px;
-    margin-bottom: 10%;
-    margin-top: 20%;
-    } 
-
-h2 {
-    text-align: center;
-    margin-bottom: 5px;
+    width: 30%;
     }
 
-p {
-   padding-left: 5%;
-   padding-right: 5%;
-   max-width: 300px;
-}    
-
-.h2con {
-    padding-bottom: 10%;
+h1 {
+    text-align: left;
+    margin-left: 5%;
 }
 
+}
+/*-------------------------------------------------------------
+                  
+-------------------------------------------------------------*/
 
-.contactForm {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 5%;
+@media (min-width: 768px) {
+/***** CONTACT SECTION *****/
+.hamburger {
+    display: none;
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2%;
 }
 
-.form  {
-    max-width: 280px;
-    min-width: 250px;
+.nava, .navb, .navc, 
+.navd, .nav-ul  {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin-left: 1%;
+    margin-top: -2%;
+    cursor: pointer;
+    }
+
+
+
+.contactSec {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.self-portrait-yuk  {
+    flex: 1 1 auto;
+    width: 30vw;
+    max-width:30vw;
+    margin-top: 30vw;
+}
+
+h2  {
+  text-align: initial;
+  margin-top: 45%;
+  flex: 1 1 auto;
+  font-size: 1.5vw;
+  line-height: 3vw;
+   }
+
+.lineBreak {
+    display: inline;
+}   
+
+p   {
+  flex: 1 1 auto;
+  margin-left: 0vw;
+  width: 45vw;
+  max-width: 50vw;
+  font-size: 1.5vw;
+  line-height: 3vw;
+ }
+
+.form {
+      width: 600px;
 }
 
 hr {
-    margin-top: 20%;
-    margin-bottom: 20%;
-    }
-/***** Contact End *****/
-
-
-/***** Images & Lightbox for Mobile *****/
-h1 {
-    text-align: center;
-    padding-bottom: 5%;
-    padding-top: 10%;
+    display: none;
     }
 
-#lightbox img {
-    max-width: 100;  
-    max-height: 100%;
-    transform: scale(.90);
-    width: 100%;
- 
-   }
-}	
-/*-------------------------------------------------------------
-                  TABLET END
--------------------------------------------------------------*/
+}
+
+
+
+
+
 /*-------------------------------------------------------------
                  SMALL DESKTOP BEGIN
 -------------------------------------------------------------*/
 /****** Large-ish Screen Media Queries: Targets VP sizes 1020px & wider. *******/
-@media (min-width: 1020px) {
+/*@media (min-width: 1020px) {
 :root { 
     background: url("../img/photos/crumpledPaperTexture.jpg") no-repeat top center;
     background-size: cover;
@@ -480,7 +420,7 @@ h1 {
     position: absolute;
     }
 /***** Navigation *****/
-    .container {
+    /*.container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -520,29 +460,7 @@ h1 {
     max-width: 360px;
   
 }
-
-
-/***** Contact *****/
-/*h1 {
-    margin-left: 10%
-    }
-
-h2, p {
-    margin-left: -5%;
-    }
-
-p {
-   margin-left: auto;
-   margin-right: auto; 
-}
 */
-
-
-
-
-
-}
-
 
 
 

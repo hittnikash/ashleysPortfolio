@@ -31,22 +31,22 @@
 
 /***** Basic Text Styles ******/
 @font-face {
-    font-family: "HackneyPersonalUseOnly";
-    src: url("font/HackneyPersonalUseOnly.eot");
-    src: url("font/HackneyPersonalUseOnly.eot?#iefix") format("embedded-opentype"),
-         url("font/HackneyPersonalUseOnly.woff2") format("woff2"),
-         url("font/HackneyPersonalUseOnly.woff") format("woff"),
-         url("font/HackneyPersonalUseOnly.ttf") format("truetype"),
-         url("font/HackneyPersonalUseOnly.svg#HackneyPersonalUseOnly") format("svg");
-    font-display: fallback;
-    font-style: normal;
+    font-family: 'HackneyPersonalUseOnly';
+    src: url('../font/HackneyPersonalUseOnly.eot');
+    src: url('../font/HackneyPersonalUseOnly.eot?#iefix') format('embedded-opentype'),
+         url('../font/HackneyPersonalUseOnly.svg#HackneyPersonalUseOnly') format('svg'),
+         url('../font/HackneyPersonalUseOnly.ttf') format('truetype'),
+         url('../font/HackneyPersonalUseOnly.woff') format('woff'),
+         url('../font/HackneyPersonalUseOnly.woff2') format('woff2');
     font-weight: normal;
-    }
-
+    font-style: normal;
+    font-display: fallback;
+  }
+  
     /***** Body Font *****/
 h1, h2, p {
     font-family: "Montserrat subheading", "Verdana", sans-serif;
-    font-size: 1rem;
+    font-size: 1.5vw;
     line-height: 25px;
     color: #000;
     }
@@ -64,7 +64,7 @@ h1 {
 }
 
 .nav-ul {
-    font-family: "HackneyPersonalUseOnly", "Impact", sans-serif;
+    font-family: "HackneyPersonalUseOnly", "Bebas Neue", "Impact", sans-serif;
     font-size: 2.5rem;
     letter-spacing: 3px;
     text-decoration: none;
@@ -109,8 +109,13 @@ h1 {
     opacity: 0.8;
     object-fit: cover;
     max-width: 100%;
-    width: 97%;
+    width: 60vw;
+    height: 30vh;
     }
+
+.graphic-image {
+    width: 85vw;
+}
 
 .project-image:hover,
 .gallery-image:hover,
@@ -147,8 +152,8 @@ h1 {
     background-color: #171717;
     border-radius: 15px;
     transform: scale(.90);
-    width: 100%;
-}
+  }
+  
 /***** lightbox End *****/
 
 
@@ -311,18 +316,26 @@ footer {
 /*-----------------------------------------------
                    TABLET BEGIN
 ------------------------------------------------*/
-/****** Large-ish Screen Media Queries: Targets VP sizes 768px & wider. *******/
-@media (min-width: 541px) {
+/****** medium-ish Screen Media Queries: Targets VP sizes 541px & wider. *******/
+@media (min-width: 540px) {
 /****** IMAGES/ GALLERY/ PROJECTS *****/
-.image-grid, .graphic-content  {
-    flex-wrap: wrap;
-    }
+
     
 .gallery-image, 
 .project-image,
 .graphic-image {
-    width: 30%;
+    width: 30vw;
+    height: 20vh;
     }
+
+.graphic-image {
+    width: 40vw;
+    height: 20vh;
+}
+
+#lightbox img {
+    transform: scale(1);
+}
 
 h1 {
     text-align: left;
@@ -333,7 +346,7 @@ h1 {
 /*-------------------------------------------------------------
                   
 -------------------------------------------------------------*/
-
+/****** medium-ish-er Screen Media Queries: Targets VP sizes 768px & wider. *******/
 @media (min-width: 768px) {
 /***** CONTACT SECTION *****/
 .hamburger {
@@ -357,32 +370,35 @@ h1 {
     cursor: pointer;
     }
 
-
+#lightbox img {
+    transform: scale(1.6);
+    max-width: 60%;
+  }
 
 .contactSec {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-}
+    }
 
 .self-portrait-yuk  {
     flex: 1 1 auto;
     width: 30vw;
-    max-width:30vw;
-    margin-top: 30vw;
-}
+    max-width: 30vw;
+    margin-top: 12%;
+    }
 
 h2  {
   text-align: initial;
-  margin-top: 45%;
   flex: 1 1 auto;
   font-size: 1.5vw;
   line-height: 3vw;
+  font-weight: bold;
    }
 
 .lineBreak {
     display: inline;
-}   
+    }   
 
 p   {
   flex: 1 1 auto;
@@ -403,15 +419,11 @@ hr {
 
 }
 
-
-
-
-
 /*-------------------------------------------------------------
                  SMALL DESKTOP BEGIN
 -------------------------------------------------------------*/
-/****** Large-ish Screen Media Queries: Targets VP sizes 1020px & wider. *******/
-/*@media (min-width: 1020px) {
+/****** Large-ish Screen Media Queries: Targets VP sizes 850px & wider. *******/
+@media (min-width: 850px) {
 :root { 
     background: url("../img/photos/crumpledPaperTexture.jpg") no-repeat top center;
     background-size: cover;
@@ -420,7 +432,7 @@ hr {
     position: absolute;
     }
 /***** Navigation *****/
-    /*.container {
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -430,8 +442,7 @@ hr {
 .nav-logo {
     margin-top: 5px;
     margin-right: 20%;
-
-    }
+}
 
 .nava, .navb, .navc, 
 .navd, .nav-ul  {
@@ -455,12 +466,9 @@ h1 {
 .gallery-image, 
 .project-image,
 .graphic-image {
-    width: 300px;
-    height: 250px;
-    max-width: 360px;
-  
+    width: 25vw;
+    height: 35vh;
 }
-*/
 
 
 

@@ -10,7 +10,7 @@
         <meta name="author" content="Ashley Needy"/>
     <!--Link to CSS -->  
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/Reformat.CSS"/>
+    <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 
@@ -22,13 +22,13 @@
                 <!-- Hamburger Menu for Mobile Nav -->
                 <button onclick = "toggle()" id= "hamburger" class= "hamburger" style= "background: url(img/icons/blackHamburger.svg)"></button>
                 <!-- Navigation Links -->   
-                <ul class= "nav-ul" id= "nav-ul">
-                    <li class="navc"><a href="index.html">Home</a></li>
-                    <li class="nava"><a href="gallery.html">Gallery</a></li>
-                    <li class="navb"><a href="projects.html">Projects</a></li>
-                    <li class="navd"><a href="contact.html">Contact</a></li>
+                    <ul class="nav-ul" id="nav-ul">
+                        <li class="navc"><a href="index.html">Home</a></li>
+                        <li class="nava"><a href="gallery.html">Gallery</a></li>
+                        <li class="navb"><a href="projects.html">Projects</a></li>
+                        <li class="navd"><a href="contact.html">Contact</a></li>
                     </ul>
-            </nav>
+           </nav>
     </header>
 
     <!-- About Section -->
@@ -53,23 +53,24 @@
 <form class="form" action="#" method="post">
 <h2 class="h2con">Contact Me!</h2>
 <fieldset>
-
     <legend><span class="number">1</span>Your Basic Info</legend>
-    <input type="text" placeholder="name:" id="name" name="your_name">
+    <input required type="text" placeholder="name:" id="name" name="your_name">
     <span class="toolTip">Can only contain letters a-z</span>
-    <input type="email" placeholder="email:" id="email" name="your_email">
+    <input required type="email" placeholder="email:" id="email" name="your_email">
     <span class="toolTip">Must be a valid email address</span>
 </fieldset>
 
 <fieldset>
     <legend><span class="number">2</span>Message</legend>
     <textarea id="feedback" placeholder="Your Thoughts..." name="user_feedback"></textarea>
+ </fieldset>
     <button onclick="thanks()" class="btn" type="submit">Submit</button>
     <p id="thankyouMes"></p>
 </form>
 </div>
 </main>
 <!-- Footer -->
+<hr class="footerLine">
     <footer role="contentinfo">
         <!-- Social Media Icons -->
             <ul class= "social-links">

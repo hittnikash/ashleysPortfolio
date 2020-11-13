@@ -1,7 +1,7 @@
 
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
-/* RegExpression = patterns in a string */
+/* RegExpression */
 /* Name must contain only letters */
 function isValidName(name) {
     return /[a-z]+/.test(name);
@@ -38,5 +38,5 @@ emailInput.addEventListener("input", createListener(isValidEmail));
 
 function thanks() {
     const userName = document.getElementById('name').value;
-    document.getElementById("thankyouMes").innerHTML = "Thank you, `${userName}`,for your valuable feedback!";
+    document.getElementById("thankyouMes").innerHTML = `Thank you ${userName}, for your valuable feedback!`;
 }

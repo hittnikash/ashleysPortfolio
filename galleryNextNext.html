@@ -13,24 +13,21 @@
        <link rel="stylesheet" href="css/styles.css"/>
     </head>
 <body>
-
 <!-- Header -->
-    <header class= "container" role="banner">
-        <!-- Navigation Logo -->
-        <img class= "nav-logo" src="img/icons/personalLogo.png" alt="Ashley Needy's logo">
-            <nav role="navigation"> 
-                <!-- Hamburger Menu for Mobile Nav -->
-                <button onclick = "toggle()" id= "hamburger" class= "hamburger" style= "background: url(img/icons/blackHamburger.svg)"></button>
-                <!-- Navigation Links -->   
-                    <ul class="nav-ul" id="nav-ul">
-                        <li class="navc"><a href="index.html">Home</a></li>
-                        <li class="nava"><a href="gallery.html">Gallery</a></li>
-                        <li class="navb"><a href="projects.html">Projects</a></li>
-                        <li class="navd"><a href="contact.html">Contact</a></li>
-                    </ul>
-            </nav>
-    </header>
-
+<header class= "container" role="banner">
+    <nav role="navigation"> 
+<!-- Hamburger Menu for Mobile Nav -->
+        <div class="topNav"> 
+            <img class= "nav-logo" src="img/icons/logo.giff" alt="Ashley Needy's logo"> 
+            <button onclick="toggle()" class="hamburgerButton"style= "background: url(img/icons/blackHamburger.svg)"></button>  </div>
+                <div id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+    </nav>
+</header>
 <!-- Content Section: Images-->
 <main class="content" role= "main">
     <section id="gallery">

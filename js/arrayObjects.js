@@ -5,14 +5,14 @@ const images = [
     {  
         name: 'BSA Gauge',
         type: '-Nikon d3500-',
-        about: 'This is a photograph of a speedometer that was manufactured by a rare motercycle company called BSA, (Birmingham Small Arms) that ceased production in 1973. The image was shot close-range, so the subject was in focus while the background was blurred.',
+        about: 'This is a photograph of a speed-ometer that was manufactured by a rare motercycle company called BSA, (Birmingham Small Arms) that ceased production in 1973. The image was shot close-range, so the subject was in focus while the background was blurred.',
         photo: 'img/photos/BSAgauge.jpg'
     },
 
     {
         name: 'Old Chevy Pickup',
         type: '-Nikon d3500-',
-        about: 'This is one of the first photographs I ever taken. The image is of a 1930s Chevy Pickup truck that I found at a transmission shop in southern Indiana. The original photograph had a lot of background noise that distracted from the focal point. Once the distractions were removed the photo was cropped and the colors were adjusted to a black and white scale.',
+        about: 'This is one of the first photographs I ever taken. The image is of a 1930s Chevy Pickup truck that I found at a transmission shop in southern Indiana. The original photograph had a lot of back-ground noise that distracted from the focal point. Once the distractions were removed the photo was cropped and the colors were adjusted to a black & white.',
         photo: 'img/photos/chevy1.jpg',
     },
 

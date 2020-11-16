@@ -50,15 +50,20 @@ h1, h2{
 
 /***** Mobile Navigation-M *****/
 .hamburgerButton {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     }
 
 .nav-logo {
     width: auto;
-    height: 55px;
+    height: 45px;
     border-radius: 7px;
     }
+    
+nav {
+    margin-left: 5%;
+    margin-right: 5%;
+}    
 
 .topNav {
     display: flex;
@@ -129,7 +134,7 @@ h1, h2{
     object-fit: cover;
     max-width: 100%;
     width: 300px;
-    height: 200px;
+    height: 180px;
     }
 
 .project-image:hover,
@@ -420,22 +425,13 @@ footer {
 ------------------------------------------------*/
 /****** medium-ish Screen Media Queries: Targets VP sizes 540px & wider. *******/
 @media (min-width: 540px) {
-.hamburgerButton {
-    width: 60px;
-    height: 60px;
-    }    
-
-.nav-logo {
-    height: 60px;
-    width: auto;
-    }
-/****** GALLERY SECTION-1 *****/
+   /****** GALLERY SECTION-1 *****/
 
 .gallery-image, 
 .project-image, 
 .graphic-image  {
     width: 400px;
-    height: 300px;
+    height: 250px;
     }
 
 h1, h2, p {
@@ -500,7 +496,7 @@ p {
 .project-image, 
 .graphic-image  {
     width: 300px;
-    height: 200px;
+    height: 180px;
     }    
 /****** ARROW NAV-2 *****/
 .left  {
@@ -609,15 +605,19 @@ figcaption {
 
 nav {
     display: flex;
-    margin: 5%;
+    margin-top: 2%;
     }
+
+#navLinks a {
+    font-size: 3.5vh;
+    margin-top: 3%;
+}
 
 #navLinks {
     display: inline-flex;
     margin-left: auto;
-    margin-top: 2%;
     }
-
+  
 .titles {
     text-align: initial;
     margin-left: 10%;
@@ -627,7 +627,7 @@ nav {
 .project-image,
 .graphic-image  {
    width:400px;
-   height: 300px;
+   height: 250px;
    }
 /***** CONTACT SECTION-3 *****/
 
@@ -654,8 +654,8 @@ nav {
 .gallery-image,
 .graphic-image,
 .project-image {
-    width: 550px;
-    height: 400px;
+    width: 350px;
+    height: 250px;
     }    
 }
 

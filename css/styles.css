@@ -116,12 +116,12 @@ nav {
 .image-grid  {
     display: flex;
     flex-wrap: wrap;
+    flex: 1 1 auto;
     justify-content: center;
     margin-left: 5%;
     margin-right: 5%;
     cursor: pointer;
     max-width: 100%;
-   
     }
 
 .gallery-image, 
@@ -255,9 +255,11 @@ figcaption {
     max-width: 400px;
     }
 
-h2 {
+.lineBreak {
     text-align: center;
     margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     }
 
 .lineBreak {
@@ -520,9 +522,10 @@ p {
     margin-top: 12%;
     }
 
-h2  {
+.bla  {
     text-align: initial;
     margin-top: 20%;
+    margin-bottom: 15%;
    }
 
 .lineBreak {
@@ -624,10 +627,9 @@ nav {
     margin-top: 10%;
 }
 
-h2 {
-    margin-top: 30%;
+ .bla {
+    margin-top: 17%;
 }
-
 .form  {
     width: 550px;
     }
@@ -641,7 +643,12 @@ h2 {
     /***** NAVIGATION-4 *****/
 #navLinks a  {
     font-size: 5vh;
+    margin-top: 2%;
     }
+
+.nav-logo {
+    height: 50px;
+}    
 
 .gallery-image,
 .graphic-image,

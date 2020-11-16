@@ -224,11 +224,17 @@ figcaption {
     }
 
 /***** CONTACT SECTION-M ******/
-.contactSec, .contentForm, .content {
+.contentForm, .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1 1 auto;
+    }
+
+.contactSec {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     }
 
 .contentForm {
@@ -237,6 +243,7 @@ figcaption {
     }
 
 .self-portrait-yuk { 
+    flex: 1 1 auto;
     width: 90%;
     height: 90%;
     border-radius: 10px;
@@ -380,7 +387,7 @@ fieldset {
     font-size: 1rem;
     font-family: "HackneyPersonalUseOnly", "Bebas Neue", "Helvetica", sans-serif;
     color: #000;
-    line-height: 3.2vh;
+    line-height: 3vh;
     letter-spacing: 2px;
     width: 300px;
     text-align: center;
@@ -438,8 +445,6 @@ footer {
     }
 
 p {
-    width: 100%;
-    padding: 5%;
     max-width: 450px;
     justify-content: center;
     }  
@@ -453,6 +458,9 @@ p {
     width: 400px;
     }
 
+#thankyouMes {
+    margin-left: 10%;
+}    
 .toolTip {
     margin-left: 220px;
     margin-top: -25px
@@ -469,13 +477,10 @@ p {
     }
 
 .topNav {
-    display: flex;
-    display: row;
     justify-content: center;
     }
 
 #navLinks {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     }
@@ -502,24 +507,14 @@ p {
     }
 
 /***** CONTACT SECTION-2 *****/
-.contactSec {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    }
-
 .self-portrait-yuk  {
-    flex: 1 1 auto;
     width: 30vw;
     max-width: 30vw;
-    margin-top: -5%;
+    margin-top: 12%;
     }
 
 h2  {
     text-align: initial;
-    flex: 1 1 auto;
-    font-size: 1rem;
-    line-height: 3vw;
     margin-top: 20%;
    }
 
@@ -548,7 +543,6 @@ hr {
 
 /***** FEATURED SECTION-2 *****/
 .imageGen {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -572,7 +566,7 @@ hr {
 
  .gen-n {
      margin-left: 15%;
-     margin-top: 5%;
+     margin-top: -5%;
     }
 
 figcaption {
@@ -613,7 +607,7 @@ nav {
 .titles {
     padding-top: 10%;
     text-align: initial;
-    margin-left: 5%;
+    margin-left: 10%;
 }    
 /***** GALLERY SECTION-3 *****/
 .gallery-image, 

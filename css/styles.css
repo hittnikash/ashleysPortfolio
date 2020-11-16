@@ -58,6 +58,7 @@ h1, h2{
     width: auto;
     height: 45px;
     border-radius: 7px;
+    margin-right: 5px;
     }
     
 nav {
@@ -119,6 +120,8 @@ nav {
     margin-left: 5%;
     margin-right: 5%;
     cursor: pointer;
+    max-width: 100%;
+   
     }
 
 .gallery-image, 
@@ -593,11 +596,11 @@ nav {
     display: flex;
     margin-top: 2%;
     }
-
+  
 #navLinks a {
-    font-size: 3.5vh;
-    margin-top: 3%;
-}
+    font-size: 3vh;
+    margin-top: 1%;
+    }
 
 #navLinks {
     display: inline-flex;

@@ -391,6 +391,7 @@ fieldset {
     letter-spacing: 2px;
     width: 300px;
     text-align: center;
+    align-self: center;
     }
 /**** Form End ****/
 /***** social Media Icons-M *****/
@@ -422,11 +423,17 @@ fieldset {
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     margin: 0 auto;
     margin-top: 10%;
     }
+
+.copyright {
+    align-self: center;
+    margin-top: -15%;
+}
 /*-----------------------------------------------
           END BASE STYLES (MOBILE FIRST)
 -----------------------------------------------*/
@@ -457,10 +464,7 @@ p {
 .form {
     width: 400px;
     }
-
-#thankyouMes {
-    margin-left: 10%;
-}    
+   
 .toolTip {
     margin-left: 220px;
     margin-top: -25px
@@ -547,10 +551,6 @@ hr {
     flex-wrap: wrap;
     justify-content: flex-start;
     }
-
-#thankyouMes {
-   margin-left: 20%;
-   }  
  
 .gen-p, .gen-t {
     flex: 1 1 auto;
@@ -620,6 +620,11 @@ nav {
 .self-portrait-yuk {
     margin-top: 10%;
 }
+
+h2 {
+    margin-top: 30%;
+}
+
 .form  {
     width: 550px;
     }

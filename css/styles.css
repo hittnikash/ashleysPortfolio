@@ -37,8 +37,8 @@
   
 h1, h2, p {
     font-family: "Montserrat subheading", "Verdana", sans-serif;
-    line-height: 25px;
-    font-weight: lighter;
+    line-height: 30px;
+    /*font-weight: lighter;*/
     color: #000;
     flex: 1 1 auto;
     }
@@ -168,11 +168,14 @@ figcaption {
    }
 
 .gen-a {
+    font-size: 1rem;
     padding-bottom: 20%;
-    max-width: 80vw;
+    max-width: 85vw;
+    line-height: 30px;
+    flex: 1 1 auto;
     }
 
-/***** End FlexBox Image Grid *****/
+/***** End FlexBox Image Grid-M *****/
 
 /* Lightbox */
 #lightbox {
@@ -263,7 +266,7 @@ hr {
     padding: 5%;
     max-width: 305px;
     justify-content: center;
-    }    
+    }  
 
 .h2con {
     padding-top: 5%;
@@ -374,7 +377,7 @@ fieldset {
     }
 
 #thankyouMes {
-    font-size: 3vh;
+    font-size: 1rem;
     font-family: "HackneyPersonalUseOnly", "Bebas Neue", "Helvetica", sans-serif;
     color: #000;
     line-height: 3.2vh;
@@ -432,11 +435,6 @@ footer {
 .graphic-image  {
     width: 400px;
     height: 250px;
-    }
-
-h1, h2, p {
-    font-size: 2.5vh;
-    line-height: 4.2vh;
     }
 
 p {
@@ -514,7 +512,7 @@ p {
     flex: 1 1 auto;
     width: 30vw;
     max-width: 30vw;
-    margin-top: 20%;
+    margin-top: -5%;
     }
 
 h2  {
@@ -530,12 +528,9 @@ h2  {
     }   
 
 p   {
-    flex: 1 1 auto;
     margin-left: 0vw;
-    width: 60vw;
-    font-size: 1rem;
-    line-height: 2.5vh;
-    padding-left: 0;
+    padding-left: 0%;
+    width: 55vw;
    }
 
 hr {
@@ -576,7 +571,6 @@ hr {
     }
 
  .gen-n {
-     font-size: 2vh;
      margin-left: 15%;
      margin-top: 5%;
     }
@@ -586,10 +580,8 @@ figcaption {
     }
 
 .gen-a  {
-    flex: 1 1 auto;
     max-width: 40vw;
     margin-left: 15%;
-    font-size: 1rem;
     }
 }
 /*-------------------------------------------------------------
@@ -619,26 +611,24 @@ nav {
     }
   
 .titles {
+    padding-top: 10%;
     text-align: initial;
-    margin-left: 10%;
+    margin-left: 5%;
 }    
 /***** GALLERY SECTION-3 *****/
 .gallery-image, 
 .project-image,
 .graphic-image  {
-   width:400px;
-   height: 250px;
+   width:250px;
+   height: 150px;
    }
 /***** CONTACT SECTION-3 *****/
-
+.self-portrait-yuk {
+    margin-top: 10%;
+}
 .form  {
     width: 550px;
     }
- /***** FEATURED *****/
- .gen-a {
-     font-size: 1rem;
-     line-height: 4vh;
-     }   
 }   
 
 /*-------------------------------------------------------------

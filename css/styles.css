@@ -89,6 +89,10 @@ nav {
     color:#000;
     }
 
+#navLinks {
+    display: none;
+} 
+
 #navLinks a:last-child {
     color: #394a4a;
     }

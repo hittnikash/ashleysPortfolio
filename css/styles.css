@@ -52,6 +52,7 @@ h1, h2{
 .hamburgerButton {
     width: 50px;
     height: 50px;
+    
     }
 
 .nav-logo {
@@ -112,7 +113,6 @@ nav {
     }   
 /***** MOBILE DISPLAY TEXT (SECTION TITLES)*****/
 .titles {
-    font-size: 1.2vh;
     text-align: center;
     padding-bottom: 2%;
     padding-top: 10%;
@@ -604,6 +604,7 @@ nav {
     }
 
 #navLinks a {
+    display: flex;
     font-size: 3vh;
     margin-top: 1%;
     }
@@ -619,6 +620,7 @@ nav {
     }    
 
 .titles {
+    font-size: 1.5vh;
     padding-top: 10%;
     text-align: initial;
     margin-left: 15%;
@@ -650,7 +652,7 @@ nav {
 @media (min-width: 1025px) {
     /***** NAVIGATION-4 *****/
 #navLinks a  {
-    font-size: 5vh;
+    font-size: 4vh;
     margin-top: 4%;
     }
 

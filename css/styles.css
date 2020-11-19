@@ -113,20 +113,19 @@ nav {
 /***** MOBILE DISPLAY TEXT (SECTION TITLES)*****/
 .titles {
     text-align: center;
-    padding-bottom: 5%;
-    padding-top: 20%;
+    padding-bottom: 2%;
+    padding-top: 10%;
     }
 /***** FlexBox Image Grid-M *****/
-.image-grid  {
+.image-grid {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 auto;
     justify-content: center;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 5%; 
     cursor: pointer;
     max-width: 100%;
-    width: 90%;
     }
 
 .gallery-image, 
@@ -209,40 +208,32 @@ figcaption {
     background-color: #171717;
     border-radius: 15px;
     transform: scale(.90);
-    }
+    }   
   
 /***** lightbox End *****/
 /***** Next & Previous Arrow Buttons *****/
- .left, .right  {
-    display: inline-flex;
+section {
+    display: flex;
+    flex-direction: column;
+    } 
+
+.arrows {
+    margin-top: 4%;
+    display: flex;
+    align-self: center;
+    }   
+
+.left, .right  {
     width: 45px;
     height: 45px;
     }
 
-.left   {
-    margin-right: 0;
-    margin-left: 40%;
-    margin-top: 10%;
-    }
-    
-.right  {
-    margin-left: 0;
-    margin-right: auto;
-    margin-top: 10%;
-    }
-
 /***** CONTACT SECTION-M ******/
-.contentForm, .content {
+.contentForm, .content, .contactSec {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1 1 auto;
-    }
-
-.contactSec {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     }
 
 .contentForm {
@@ -415,7 +406,6 @@ fieldset {
 
 .icons {
     padding: 8px;
-    margin-bottom: 15%;
     }
 
 .icons:hover {
@@ -425,7 +415,7 @@ fieldset {
 
 .footerLine {
     display: block;
-    width: 85%;
+    width: 65%;
     max-width: 85%;
     color: black;
     margin-bottom: -7%;
@@ -442,7 +432,7 @@ footer {
 
 .copyright {
     align-self: center;
-    margin-top: -15%;
+    margin-bottom: 5%;
 }
 /*-----------------------------------------------
           END BASE STYLES (MOBILE FIRST)
@@ -452,8 +442,16 @@ footer {
 ------------------------------------------------*/
 /****** medium-ish Screen Media Queries: Targets VP sizes 540px & wider. *******/
 @media (min-width: 540px) {
-   /****** GALLERY SECTION-1 *****/
+/****** NAVIGATION SECTION-1 *****/
+.nav-logo {
+    margin-left: 4%;
+}
 
+.hamburgerButton {
+    margin-right: 4%;
+}
+
+/****** GALLERY SECTION-1 *****/
 .gallery-image, 
 .project-image, 
 .graphic-image  {
@@ -469,6 +467,7 @@ p {
 #lightbox img {
     transform: scale(1);
     }
+  
 
 /***** CONTACT SECTION-1 *****/
 .form {
@@ -486,22 +485,6 @@ p {
 /****** medium-ish-er Screen Media Queries: Targets VP sizes 768px & wider. *******/
 @media (min-width: 768px) {
 /***** NAVIGATION-2 *****/
-.hamburgerButton {
-    display: none;
-    }
-
-.topNav {
-    justify-content: center;
-    }
-
-#navLinks {
-    flex-direction: row;
-    justify-content: center;
-    }
-   
-#navLinks a {
-    font-size: 4vh;
-    }
 
 /***** GALLERY SECTION-2 *****/
 #lightbox img {
@@ -515,16 +498,19 @@ p {
     width: 300px;
     height: 180px;
     }    
-/****** ARROW NAV-2 *****/
-.left  {
-    margin-left: 45%;
-    }
 
 /***** CONTACT SECTION-2 *****/
+.contactSec {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    
 .self-portrait-yuk  {
     width: 30vw;
     max-width: 30vw;
-    margin-top: 12%;
+    margin-top: -10%;
+    margin-left: 10%;
     }
 
 .bla  {
@@ -588,37 +574,53 @@ figcaption {
     max-width: 40vw;
     margin-left: 15%;
     }
+
+.footerLine {
+    margin-top: 5%;
+    width: 60%;
+    }
+
+.social-links {
+   height: -10%;
+   }
 }
 /*-------------------------------------------------------------
                  i-PAD BEGIN-3
 -------------------------------------------------------------*/
 /****** Large-ish Screen Media Queries: Targets VP sizes 1024px & wider. *******/
 @media (min-width: 1024px) {
+    
 /***** NAVIGATION-3 *****/
 .topNav {
     display: inline-flex;
-    justify-content: flex-end;
+    margin-right: auto;
     }
 
 nav {
     display: flex;
     margin-top: 2%;
+    justify-content: flex-end;
     }
-  
+
 #navLinks a {
-    font-size: 3vh;
+    font-size: 5vh;
     margin-top: 1%;
+    }
+
+.hamburgerButton {
+    display: none;
     }
 
 #navLinks {
     display: inline-flex;
-    margin-left: auto;
-    }
-  
+    flex-direction: row;
+    margin-right: 4%;
+    }    
+
 .titles {
     padding-top: 10%;
     text-align: initial;
-    margin-left: 10%;
+    margin-left: 15%;
 }    
 /***** GALLERY SECTION-3 *****/
 .gallery-image, 
@@ -644,10 +646,9 @@ nav {
             LAPTOP BEGIN-4
 -------------------------------------------------------------*/
 /****** Large-ish Screen Media Queries: Targets VP sizes 1200px & wider. *******/
-@media (min-width: 1200px) {
-    /***** NAVIGATION-4 *****/
+@media (min-width: 1025px) {
+/***** NAVIGATION-4 *****/
 #navLinks a  {
-    font-size: 5vh;
     margin-top: 4%;
     }
 

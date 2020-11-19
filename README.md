@@ -1,4 +1,4 @@
-README:
+<b>README:</b>
 For the Code Louisville project I decided to make an online personal portfolio to sort of compile and showcase images and design work that I have created throughout the years. I had a lot of content already in the form of photographs and vector designs to display on separate pages. One of the biggest challenges I had while working on this project was media queries that target viewport sizes larger than my tiny laptop. I also struggled to figure out what the other navigation links should be as I do not care to explain my work or write about myself- which goes against everything I learned  when obtaining my visual communications degree. I believe that art and visual messages should be interpreted by the viewer and if you have to explain it- then you did not succeed in getting your message across. This site was meant to be a virtual gallery where the user or audience can virtually interact with the artist.
 
 <b>Features:</b>

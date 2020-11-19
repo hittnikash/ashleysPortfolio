@@ -30,7 +30,7 @@ let html = '';
 for (let i = 0; i < images.length; i ++) {
     let image = images[i];
     html += `
-        <figure>
+        <figure class="array-fig">
         <h2 class="gen-n">${image.name}</h2>
         <img class="gen-p" src="${image.photo}" alt="${image.name}">
         <figcaption class= "gen-t">${image.type}</figcaption></figure>

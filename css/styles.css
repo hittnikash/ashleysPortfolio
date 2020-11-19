@@ -38,7 +38,6 @@
 h1, h2, p {
     font-family: "Montserrat subheading", "Verdana", sans-serif;
     line-height: 30px;
-    /*font-weight: lighter;*/
     color: #000;
     flex: 1 1 auto;
     }
@@ -140,7 +139,7 @@ nav {
     flex-wrap: wrap;
     flex: 1 1 auto;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     filter: grayscale(100%); 
     opacity: 0.8;
     object-fit: cover;
@@ -158,14 +157,27 @@ nav {
     transform: scale(1);
     }
 
-/***** Featured-M *****/
+.figGrid {
+    font-family: "HackneyPersonalUseOnly", "Bebas Neue", "Impact", sans-serif; 
+    font-size: .75rem;
+    letter-spacing: 3px;
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    text-align: center;
+    margin-top: -2%;
+    width: 300px;
+    margin-left: 5px;
+    border-radius: 0 0 10px 10px;
+    }
+
+/***** Feature-M *****/
 .imageGen {
     display: flex;
     flex-direction: column;
     align-items: center;
     }
 
-figcaption {
+.gen-t {
     background-color: #000;
     color: white;
     font-style: italic;
@@ -464,6 +476,10 @@ footer {
     height: 250px;
     }
 
+.figGrid{
+    width: 400px;
+}    
+
 p {
     max-width: 450px;
     justify-content: center;
@@ -503,6 +519,15 @@ p {
     width: 300px;
     height: 180px;
     }    
+
+figure {
+    margin-bottom: 0%;
+}
+
+.figGrid {
+    max-width: 300px;
+    margin-bottom: 0%;
+}
 
 /***** CONTACT SECTION-2 *****/
 .contactSec {
@@ -571,7 +596,7 @@ hr {
      margin-top: -5%;
     }
 
-figcaption {
+.array-fig {
     margin-bottom: 30%;
     }
 
@@ -638,6 +663,10 @@ nav {
    width:250px;
    height: 150px;
    }
+  
+.figGrid { 
+    max-width: 250px;
+}   
 /***** CONTACT SECTION-3 *****/
 .self-portrait-yuk {
     margin-top: 10%;
@@ -658,7 +687,7 @@ nav {
 @media (min-width: 1200px) {
     /***** NAVIGATION-4 *****/
 #navLinks a  {
-    font-size: 4vh;
+    font-size: 5vh;
     }
 
 .nav-logo {
@@ -671,27 +700,25 @@ nav {
 .project-image {
     width: 350px;
     height: 250px;
+    }   
+    
+.figGrid {
+    max-width: 350px;
     }    
 }
-
 /*-------------------------------------------------------------
            DESKTOP BEGIN-5
 -------------------------------------------------------------*/
 /****** Large-ish Screen Media Queries: Targets VP sizes 1400px & wider. *******/
 @media (min-width: 1400px) {
-#navLinks a {
-    font-size: 5vh;
-}
-
 #navLinks {
     margin-right: 5%;
 }
 
 .topNav{
     margin-left: 7%;
-}
-
-
+    }
+}   
 
 
 

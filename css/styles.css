@@ -102,6 +102,10 @@ nav {
     color: #394a4a;
     }
 
+#navLinks a:nth-child(1) {
+    padding-left: 0;
+}
+
 #navLinks a:hover {
     background-color: #394a4a;
     color: white;
@@ -595,6 +599,8 @@ figcaption {
 .topNav {
     display: inline-flex;
     margin-right: auto;
+    margin-top: 3%;
+    position: relative;
     }
 
 nav {
@@ -605,7 +611,7 @@ nav {
 
 #navLinks a {
     display: flex;
-    font-size: 3vh;
+    font-size: 3.3vh;
     margin-top: 1%;
     }
 
@@ -616,14 +622,14 @@ nav {
 #navLinks {
     display: inline-flex;
     flex-direction: row;
-    margin-right: 4%;
+    position: relative
     }    
 
 .titles {
-    font-size: 1.5vh;
+    margin-left: 12%;
     padding-top: 10%;
     text-align: initial;
-    margin-left: 15%;
+ 
 }    
 /***** GALLERY SECTION-3 *****/
 .gallery-image, 
@@ -649,15 +655,15 @@ nav {
             LAPTOP BEGIN-4
 -------------------------------------------------------------*/
 /****** Large-ish Screen Media Queries: Targets VP sizes 1200px & wider. *******/
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
     /***** NAVIGATION-4 *****/
 #navLinks a  {
     font-size: 4vh;
-    margin-top: 4%;
     }
 
 .nav-logo {
     height: 50px;
+    position: relative;
 }    
 
 .gallery-image,
@@ -667,6 +673,25 @@ nav {
     height: 250px;
     }    
 }
+
+/*-------------------------------------------------------------
+           DESKTOP BEGIN-5
+-------------------------------------------------------------*/
+/****** Large-ish Screen Media Queries: Targets VP sizes 1400px & wider. *******/
+@media (min-width: 1400px) {
+#navLinks a {
+    font-size: 5vh;
+}
+
+#navLinks {
+    margin-right: 5%;
+}
+
+.topNav{
+    margin-left: 7%;
+}
+
+
 
 
 

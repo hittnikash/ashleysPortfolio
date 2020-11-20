@@ -17,4 +17,4 @@ The contact/ about page had a shift in layout from a single column to two column
 
 <b>(JS Feature)</b> The home page displays an object that organizes featured images and other data such as the type of camera used for the shot, the title of the image and the about which is just a short description of the image- that you won't get by looking through the gallery images. The idea was the gallery would host the images. Then if the user wanted to find out more about the image or had any other feedback they could submit it in the contact page. Then those questions would be answered in the featured section which would be updated. 
 
-<b>(CSS Feature)</b> :nth-child & :lastchild was used to style the navigation links. 
+<b>(CSS Feature)</b> :nth-child & :lastchild was used to style the navigation links. :nth-child was also used for layout of the "about" paragraphs on the featured page.

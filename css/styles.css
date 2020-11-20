@@ -7,6 +7,7 @@
   |     -2 = (Second Media Quiery)       |
   |      -3 = (Third Media Quiery)       |
   |     -4 = (Fourth Media Quiery)       |
+  |     -5 = (Fifth Media Quiery)        |
   ----------------------------------------*/
 /*--------------------------------------------
            BASE STYLES (MOBILE-FIRST)
@@ -35,7 +36,7 @@
     font-display: fallback;
     }
   
-h1, h2, p {
+ p {
     font-family: "Montserrat subheading", "Verdana", sans-serif;
     line-height: 30px;
     color: #000;
@@ -43,8 +44,10 @@ h1, h2, p {
     }
 
 h1, h2{
+    font-family: "HackneyPersonalUseOnly", "Bebas Neue", "Impact", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: 1.5rem;
     }
 
 /***** Mobile Navigation-M *****/
@@ -113,8 +116,9 @@ nav {
 /***** MOBILE DISPLAY TEXT (SECTION TITLES)*****/
 .titles {
     text-align: center;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
     padding-top: 10%;
+
     }
 /***** FlexBox Image Grid-M *****/
 .image-grid {
@@ -184,8 +188,7 @@ nav {
 .gen-p {
     max-width: 100%;
     width: 80vw;
-    
-   }
+    }
 
 .gen-a {
     font-size: 1rem;
@@ -573,6 +576,24 @@ hr {
     flex-wrap: wrap;
     justify-content: flex-start;
     }
+
+.gen-a:nth-child(2) {
+    margin-top: -10%;
+    }
+
+.gen-a:nth-child(4) {
+    margin-top: -25%;
+    }
+
+.gen-a:nth-child(6) {
+    margin-top: -30%;
+    }
+
+.gen-p, 
+.gen-n,
+.gen-t {
+    margin-left: 25%;
+}
  
 .gen-p, .gen-t {
     flex: 1 1 auto;
@@ -673,6 +694,18 @@ nav {
 .form  {
     width: 550px;
     }
+/***** FEATURED SECTION *****/
+.gen-a:nth-child(2) {
+    margin-top: -25%;
+    }
+
+.gen-a:nth-child(4) {
+    margin-top: -45%;
+    }
+
+.gen-a:nth-child(6) {
+    margin-top: -50%;
+    }
 }   
 
 /*-------------------------------------------------------------
@@ -688,7 +721,7 @@ nav {
 .nav-logo {
     height: 50px;
     position: relative;
-}    
+    }    
 
 .gallery-image,
 .graphic-image,
@@ -699,7 +732,20 @@ nav {
     
 .figGrid {
     max-width: 350px;
+    }  
+/***** FEATURED SECTION *****/
+.gen-a:nth-child(2) {
+    margin-top: -30%;
+    }
+
+.gen-a:nth-child(4) {
+    margin-top: -55%;
+    }
+
+.gen-a:nth-child(6) {
+    margin-top: -55%;
     }    
+    
 }
 /*-------------------------------------------------------------
            DESKTOP BEGIN-5
@@ -713,6 +759,18 @@ nav {
 .topNav{
     margin-left: 7%;
     }
+/***** FEATURED SECTION *****/
+.gen-a:nth-child(2) {
+    margin-top: -35%;
+    }
+
+.gen-a:nth-child(4) {
+    margin-top: -55%;
+    }
+
+.gen-a:nth-child(6) {
+    margin-top: -60%;
+    } 
 }   
 
 

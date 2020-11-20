@@ -101,10 +101,6 @@ nav {
     color: #394a4a;
     }
 
-#navLinks a:nth-child(1) {
-    padding-left: 0;
-}
-
 #navLinks a:hover {
     background-color: #394a4a;
     color: white;
@@ -488,7 +484,6 @@ p {
 #lightbox img {
     transform: scale(1);
     }
-  
 
 /***** CONTACT SECTION-1 *****/
 .form {

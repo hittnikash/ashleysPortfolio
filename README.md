@@ -18,3 +18,21 @@ The contact/ about page had a shift in layout from a single column to two column
 <b>(JS Feature)</b> The home page displays an object that organizes featured images and other data such as the type of camera used for the shot, the title of the image and the about which is just a short description of the image- that you won't get by looking through the gallery images. The idea was the gallery would host the images. Then if the user wanted to find out more about the image or had any other feedback they could submit it in the contact page. Then those questions would be answered in the featured section which would be updated. 
 
 <b>(CSS Feature)</b> :nth-child & :lastchild was used to style the navigation links. :nth-child was also used for layout of the "about" paragraphs on the featured page.
+
+<b>Project Testing</b>
+My project was tested on mac and windows, and runs on Google Chrome, Safari & FireFox.<br>
+
+<b>Lighthouse Audits</b> 
+<p>I ran Lighthouse Audits to see where I could improve, performance, accessibility, Best Practices & Search Engine Optimization.
+My first Audit showed me that I needed to improve on my semantics, and to make sure I was following good practices.</p>
+<div><img  src="lighthouseAudits/images/1.png"  width="300px" height="80px" alt="Lighthouse Audit"></div>
+<p>My second Audit was looking better, with Best practices but- still I went through to see how I could improve upon performance and accessibility.
+I ended up shrinking my images dramatically and changed them from pngs to jpgs and then sent them through an image optimizer to save on file size.</p>
+<div><img  src="lighthouseAudits/images/2.png"  width="300px" height="100px" alt="Lighthouse Audit"></div>
+<p>My third audit showed little improvement. But still I kept looking through the report to see where I could improve. </p>
+<div><img  src="lighthouseAudits/images/3.png"  width="300px" height="100px" alt="Lighthouse Audit"></div>
+<p>My fourth audit I started to think that the performance score may also have something to do with network connection.</p>
+<div><img  src="lighthouseAudits/images/4.png"  width="400px" height="200px" alt="Lighthouse Audit"></div>
+<p>As these scores were inconsistent each time I generated a new report. I decided to focus on accessibility, Best practices and SEO.  
+Below is the last audit done before site submission.</p>
+<div><img  src="lighthouseAudits/images/5.png" width="400px" height="200px" alt="Lighthouse Audit"></div

@@ -5,21 +5,21 @@ const images = [
     {  
         name: 'BSA Gauge',
         type: '-Nikon d3500-',
-        about: 'This is a photograph of a speed-ometer that was manufactured by a rare motercycle company called BSA, (Birmingham Small Arms) that ceased production in 1973. The image was shot close-range, so the subject was in focus while the background was blurred.',
+        about: 'This is a photograph of a speedometer that was manufactured by a rare motercycle company called BSA, (Birmingham Small Arms) that ceased production in 1973. The image was shot close-range, so the subject was in focus while the background was blurred.',
         photo: 'img/photos/BSAgauge.jpg'
     },
 
     {
         name: 'Old Chevy Pickup',
         type: '-Nikon d3500-',
-        about: 'This is one of the first photographs I ever taken. The image is of a 1930s Chevy Pickup truck that I found at a transmission shop in southern Indiana. The original photograph had a lot of back-ground noise that distracted from the focal point. Once the distractions were removed the photo was cropped and the colors were adjusted to a black & white.',
+        about: 'This is one of the first photographs I have ever taken. The image is of a 1930s Chevy Pickup truck that I found at a transmission shop in southern Indiana. The original photograph had a lot of back-ground noise that distracted from the focal point. Once the distractions were removed the photo was cropped and the colors were adjusted to black & white.',
         photo: 'img/photos/chevy1.jpg',
     },
 
     {
         name: 'Cafe-Style Motorcycle' , 
         type: '-Nikon d3500-',
-        about: 'This is an image of a Honda Scrambler that has been de-badged and chopped to imitate the popular "cafe" style. Unnecessary weight is removed from the bike which aids in performance and speed. This black and white poster style was acheived using Adobe Photoshop, the threshold filter was applied and then fine-tuned to acheive the desired effect.',
+        about: 'This is an image of a Honda Scrambler that has been de-badged and chopped to imitate the popular "cafe" style. Unnecessary weight is removed from the bike which aids in performance and speed. This black and white poster style was achieved using Adobe Photoshop, the threshold filter was applied and then fine-tuned to acheive the desired effect.',
         photo: 'img/photos/cafe1.jpg'
     }
 ];

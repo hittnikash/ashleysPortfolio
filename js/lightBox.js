@@ -16,7 +16,7 @@ images.forEach(image => {
         while (lightbox.firstChild) {
             lightbox.removeChild(lightbox.firstChild);
         }
-         lightbox.appendChild(img);A
+         lightbox.appendChild(img);
     });
 });
 
